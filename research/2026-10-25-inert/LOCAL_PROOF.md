@@ -114,6 +114,6 @@ For B=d n^2 and p not dividing 6d, the unit u is d times a unit square.
 Thus the condition that u be square is exactly (d/p)=1. This proves the
 proposed inert-prime exclusion and the stronger local lattice count.
 
-Source: [Alpoge--Ho, Sections 2--3, especially Lemma 3.3 and (11)]
-(https://arxiv.org/html/1807.03761). The classification in this note is
+Source: [Alpoge--Ho, Sections 2--3, especially Lemma 3.3 and (11)](https://arxiv.org/html/1807.03761).
+The classification in this note is
 derived explicitly rather than assumed from general minimal-model theory.

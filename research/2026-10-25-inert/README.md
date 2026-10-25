@@ -35,6 +35,7 @@ Reproduce the finite checks from the repository root:
 ```sh
 python local_quartic_checks.py
 python research/2026-10-25-inert/verify.py
+python research/2026-10-25-inert/symbolic_checks.py
 ```
 
 The first script reproduces the original 215,892 repeated-root residue checks.
@@ -44,9 +45,13 @@ point quartics. It verifies 77 changes of basis within actual row lattices.
 All assertions passed, with zero counterexamples. Exact scope and sample
 examples are in [results.json](results.json); finite tests are not proofs.
 
-The script uses only Python's standard library. The original script requires
-SymPy. These checks do not compute complete integral-point sets, certify a
-rank bound, or certify novelty.
+The last script verifies four symbolic identities: the split-prime example
+family, the quartic discriminant, and the determinant and depression equations
+used to reconstruct transformation matrices.
+
+The finite verifier uses only Python's standard library. The original and
+symbolic scripts require SymPy. These checks do not compute complete
+integral-point sets, certify a rank bound, or certify novelty.
 
 The conclusion here is an individual-curve bound. No new average theorem or
 rank distribution on an inert-supported thin family is established.
