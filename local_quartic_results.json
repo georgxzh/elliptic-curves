@@ -1,0 +1,8 @@
+{
+  "symbolic_identities_verified": 2,
+  "local_point_cases": 36,
+  "repeated_root_disk_residues_checked": 215892,
+  "counterexamples_in_repeated_root_disk": 0,
+  "cases_with_square_in_simple_root_disk": 36,
+  "scope": "Selected primes and local points only; not a proof of the global bound."
+}

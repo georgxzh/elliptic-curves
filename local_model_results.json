@@ -1,0 +1,876 @@
+{
+  "scope": "Finite arithmetic and component-combinatorics checks only; global orbit gluing and novelty require separate review.",
+  "local_cases": 80,
+  "residues_checked": 1888944,
+  "local_counterexamples": 0,
+  "local_checks": [
+    {
+      "p": 5,
+      "v_B": 1,
+      "unit": 1,
+      "residues": 5,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 1,
+      "unit": 2,
+      "residues": 5,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 1,
+      "unit": 3,
+      "residues": 5,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 1,
+      "unit": 4,
+      "residues": 5,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 2,
+      "unit": 1,
+      "residues": 25,
+      "square_values": 25,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 2,
+      "unit": 2,
+      "residues": 25,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 2,
+      "unit": 3,
+      "residues": 25,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 2,
+      "unit": 4,
+      "residues": 25,
+      "square_values": 25,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 4,
+      "unit": 1,
+      "residues": 625,
+      "square_values": 125,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 4,
+      "unit": 2,
+      "residues": 625,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 4,
+      "unit": 3,
+      "residues": 625,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 4,
+      "unit": 4,
+      "residues": 625,
+      "square_values": 125,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 5,
+      "unit": 1,
+      "residues": 3125,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 5,
+      "unit": 2,
+      "residues": 3125,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 5,
+      "unit": 3,
+      "residues": 3125,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 5,
+      "v_B": 5,
+      "unit": 4,
+      "residues": 3125,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 1,
+      "unit": 1,
+      "residues": 7,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 1,
+      "unit": 2,
+      "residues": 7,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 1,
+      "unit": 3,
+      "residues": 7,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 1,
+      "unit": 4,
+      "residues": 7,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 1,
+      "unit": 5,
+      "residues": 7,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 1,
+      "unit": 6,
+      "residues": 7,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 2,
+      "unit": 1,
+      "residues": 49,
+      "square_values": 49,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 2,
+      "unit": 2,
+      "residues": 49,
+      "square_values": 49,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 2,
+      "unit": 3,
+      "residues": 49,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 2,
+      "unit": 4,
+      "residues": 49,
+      "square_values": 49,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 2,
+      "unit": 5,
+      "residues": 49,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 2,
+      "unit": 6,
+      "residues": 49,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 4,
+      "unit": 1,
+      "residues": 2401,
+      "square_values": 343,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 4,
+      "unit": 2,
+      "residues": 2401,
+      "square_values": 343,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 4,
+      "unit": 3,
+      "residues": 2401,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 4,
+      "unit": 4,
+      "residues": 2401,
+      "square_values": 343,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 4,
+      "unit": 5,
+      "residues": 2401,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 4,
+      "unit": 6,
+      "residues": 2401,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 5,
+      "unit": 1,
+      "residues": 16807,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 5,
+      "unit": 2,
+      "residues": 16807,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 5,
+      "unit": 3,
+      "residues": 16807,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 5,
+      "unit": 4,
+      "residues": 16807,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 5,
+      "unit": 5,
+      "residues": 16807,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 7,
+      "v_B": 5,
+      "unit": 6,
+      "residues": 16807,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 1,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 2,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 3,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 4,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 5,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 6,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 7,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 8,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 9,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 1,
+      "unit": 10,
+      "residues": 11,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 1,
+      "residues": 121,
+      "square_values": 121,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 2,
+      "residues": 121,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 3,
+      "residues": 121,
+      "square_values": 121,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 4,
+      "residues": 121,
+      "square_values": 121,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 5,
+      "residues": 121,
+      "square_values": 121,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 6,
+      "residues": 121,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 7,
+      "residues": 121,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 8,
+      "residues": 121,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 9,
+      "residues": 121,
+      "square_values": 121,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 2,
+      "unit": 10,
+      "residues": 121,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 1,
+      "residues": 14641,
+      "square_values": 1331,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 2,
+      "residues": 14641,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 3,
+      "residues": 14641,
+      "square_values": 1331,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 4,
+      "residues": 14641,
+      "square_values": 1331,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 5,
+      "residues": 14641,
+      "square_values": 1331,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 6,
+      "residues": 14641,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 7,
+      "residues": 14641,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 8,
+      "residues": 14641,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 9,
+      "residues": 14641,
+      "square_values": 1331,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 4,
+      "unit": 10,
+      "residues": 14641,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 1,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 2,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 3,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 4,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 5,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 6,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 7,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 8,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 9,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    },
+    {
+      "p": 11,
+      "v_B": 5,
+      "unit": 10,
+      "residues": 161051,
+      "square_values": 0,
+      "matches_prediction": true
+    }
+  ],
+  "component_checks": [
+    {
+      "group": [
+        1
+      ],
+      "target": [
+        0
+      ],
+      "unordered_pairs": 1,
+      "doubling_fiber": 1
+    },
+    {
+      "group": [
+        2
+      ],
+      "target": [
+        0
+      ],
+      "unordered_pairs": 2,
+      "doubling_fiber": 2
+    },
+    {
+      "group": [
+        2
+      ],
+      "target": [
+        1
+      ],
+      "unordered_pairs": 1,
+      "doubling_fiber": 0
+    },
+    {
+      "group": [
+        3
+      ],
+      "target": [
+        0
+      ],
+      "unordered_pairs": 2,
+      "doubling_fiber": 1
+    },
+    {
+      "group": [
+        3
+      ],
+      "target": [
+        1
+      ],
+      "unordered_pairs": 2,
+      "doubling_fiber": 1
+    },
+    {
+      "group": [
+        3
+      ],
+      "target": [
+        2
+      ],
+      "unordered_pairs": 2,
+      "doubling_fiber": 1
+    },
+    {
+      "group": [
+        4
+      ],
+      "target": [
+        0
+      ],
+      "unordered_pairs": 3,
+      "doubling_fiber": 2
+    },
+    {
+      "group": [
+        4
+      ],
+      "target": [
+        1
+      ],
+      "unordered_pairs": 2,
+      "doubling_fiber": 0
+    },
+    {
+      "group": [
+        4
+      ],
+      "target": [
+        2
+      ],
+      "unordered_pairs": 3,
+      "doubling_fiber": 2
+    },
+    {
+      "group": [
+        4
+      ],
+      "target": [
+        3
+      ],
+      "unordered_pairs": 2,
+      "doubling_fiber": 0
+    },
+    {
+      "group": [
+        6
+      ],
+      "target": [
+        0
+      ],
+      "unordered_pairs": 4,
+      "doubling_fiber": 2
+    },
+    {
+      "group": [
+        6
+      ],
+      "target": [
+        1
+      ],
+      "unordered_pairs": 3,
+      "doubling_fiber": 0
+    },
+    {
+      "group": [
+        6
+      ],
+      "target": [
+        2
+      ],
+      "unordered_pairs": 4,
+      "doubling_fiber": 2
+    },
+    {
+      "group": [
+        6
+      ],
+      "target": [
+        3
+      ],
+      "unordered_pairs": 3,
+      "doubling_fiber": 0
+    },
+    {
+      "group": [
+        6
+      ],
+      "target": [
+        4
+      ],
+      "unordered_pairs": 4,
+      "doubling_fiber": 2
+    },
+    {
+      "group": [
+        6
+      ],
+      "target": [
+        5
+      ],
+      "unordered_pairs": 3,
+      "doubling_fiber": 0
+    },
+    {
+      "group": [
+        2,
+        2
+      ],
+      "target": [
+        0,
+        0
+      ],
+      "unordered_pairs": 4,
+      "doubling_fiber": 4
+    },
+    {
+      "group": [
+        2,
+        2
+      ],
+      "target": [
+        0,
+        1
+      ],
+      "unordered_pairs": 2,
+      "doubling_fiber": 0
+    },
+    {
+      "group": [
+        2,
+        2
+      ],
+      "target": [
+        1,
+        0
+      ],
+      "unordered_pairs": 2,
+      "doubling_fiber": 0
+    },
+    {
+      "group": [
+        2,
+        2
+      ],
+      "target": [
+        1,
+        1
+      ],
+      "unordered_pairs": 2,
+      "doubling_fiber": 0
+    }
+  ],
+  "nonsplit_IV": {
+    "all_invariant_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "pairs_with_rational_components": [
+      [
+        0,
+        0
+      ]
+    ]
+  }
+}
