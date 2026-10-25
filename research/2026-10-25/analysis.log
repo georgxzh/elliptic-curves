@@ -1,0 +1,105 @@
+Independent enumeration and histogram checks passed
+Exact rational group-law checks passed
+{
+  "verification": {
+    "independent_full_T4_L4": 4252,
+    "independent_full_T4_L16": 4252,
+    "independent_full_T4_L64": 4252,
+    "independent_full_T4_L256": 4252,
+    "independently_checked_leader_counts": 100,
+    "histograms_and_all_six_moments_checked": 20
+  },
+  "real_volumes": {
+    "4": 5.961031081071053,
+    "16": 6.961144185731358,
+    "64": 7.461144397818872,
+    "256": 7.711144398232054
+  },
+  "comparisons": [
+    {
+      "T": 4,
+      "models": 4252,
+      "mean_N_L256": 1.899811853245532,
+      "mean_N3_L16": 89.10865475070555,
+      "mean_N3_L256": 143.6603951081844,
+      "mean_N3_minimal_L256": 143.1465598491989,
+      "cutoff_M3_increase_fraction": 0.6121935126289952,
+      "normalized_first_moment_L4": 3.000940733772342,
+      "predicted_normalized_first_moment_L4": 2.9805155405355266,
+      "normalized_first_moment_L256": 3.799623706491064,
+      "predicted_normalized_first_moment_L256": 3.855572199116027,
+      "multi_x_probability_L4": 0.15216368767638758,
+      "nonminimal_share_of_M3": 0.005451473698685705,
+      "models_N_at_least_20_share_M3": 0.4204412255829639,
+      "max_N_L256": 34
+    },
+    {
+      "T": 8,
+      "models": 132216,
+      "mean_N_L256": 1.357339505052339,
+      "mean_N3_L16": 53.86974345011194,
+      "mean_N3_L256": 87.28867913111878,
+      "mean_N3_minimal_L256": 87.05398815743644,
+      "cutoff_M3_increase_fraction": 0.6203655993267478,
+      "normalized_first_moment_L4": 2.9841643234827435,
+      "predicted_normalized_first_moment_L4": 2.9805155405355266,
+      "normalized_first_moment_L256": 3.839135873579604,
+      "predicted_normalized_first_moment_L256": 3.855572199116027,
+      "multi_x_probability_L4": 0.09551794034004961,
+      "nonminimal_share_of_M3": 0.003820132813908028,
+      "models_N_at_least_20_share_M3": 0.3595174058310574,
+      "max_N_L256": 48
+    },
+    {
+      "T": 16,
+      "models": 4202990,
+      "mean_N_L256": 0.9637044104316213,
+      "mean_N3_L16": 32.32243950140257,
+      "mean_N3_L256": 50.46379648773849,
+      "mean_N3_minimal_L256": 50.25642156647924,
+      "cutoff_M3_increase_fraction": 0.5612619983571696,
+      "normalized_first_moment_L4": 2.984968320172068,
+      "predicted_normalized_first_moment_L4": 2.9805155405355266,
+      "normalized_first_moment_L256": 3.854817641726485,
+      "predicted_normalized_first_moment_L256": 3.855572199116027,
+      "multi_x_probability_L4": 0.06179267616625307,
+      "nonminimal_share_of_M3": 0.005134417713342221,
+      "models_N_at_least_20_share_M3": 0.347462168014202,
+      "max_N_L256": 68
+    },
+    {
+      "T": 24,
+      "models": 31879270,
+      "mean_N_L256": 0.7868654457896934,
+      "mean_N3_L16": 23.48006896017381,
+      "mean_N3_L256": 35.71824455202393,
+      "mean_N3_minimal_L256": 35.57193857051295,
+      "cutoff_M3_increase_fraction": 0.5212154875953794,
+      "normalized_first_moment_L4": 2.982989607174107,
+      "predicted_normalized_first_moment_L4": 2.9805155405355266,
+      "normalized_first_moment_L256": 3.8548376768247334,
+      "predicted_normalized_first_moment_L256": 3.855572199116027,
+      "multi_x_probability_L4": 0.0476609094248394,
+      "nonminimal_share_of_M3": 0.005100599851460941,
+      "models_N_at_least_20_share_M3": 0.3320888468803263,
+      "max_N_L256": 88
+    },
+    {
+      "T": 32,
+      "models": 134285276,
+      "mean_N_L256": 0.6815315031262251,
+      "mean_N3_L16": 18.62309388260854,
+      "mean_N3_L256": 27.82488377951429,
+      "mean_N3_minimal_L256": 27.69853051817959,
+      "cutoff_M3_increase_fraction": 0.49410640116565063,
+      "normalized_first_moment_L4": 2.982495868452923,
+      "predicted_normalized_first_moment_L4": 2.9805155405355266,
+      "normalized_first_moment_L256": 3.855324379622516,
+      "predicted_normalized_first_moment_L256": 3.855572199116027,
+      "multi_x_probability_L4": 0.0396232197489768,
+      "nonminimal_share_of_M3": 0.005537696764096212,
+      "models_N_at_least_20_share_M3": 0.3163402386969935,
+      "max_N_L256": 88
+    }
+  ]
+}
