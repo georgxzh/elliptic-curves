@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-25",
+  "scope": "Research ideas, source audit and experiment inventory. No manuscript. No claim of certified novelty or independently reviewed proof.",
+  "priority_candidate": {
+    "family": "E_d,n: y^2=x^3+d*n^2; fixed nonzero integer d, positive cubefree n",
+    "proposed_bound": "#E_d,n(Z) <<_d 2^(rank E_d,n(Q) + omega_split(n))",
+    "omega_split": "Number of distinct p dividing n with p not dividing 6d and Legendre(d,p)=1",
+    "status": "Stronger candidate than the first-pass C^omega_split bound. Local calculations and a global counting route identified; not certified as a new theorem.",
+    "comparison": "Direct specialization of Alpoge-Ho's displayed discriminant-factor bound has factors 9 or 17 at p|n, for v_p(n)=1 or 2. Candidate replaces these by 2 at split primes and 1 at inert primes, with a d-dependent overall constant.",
+    "local_evidence": [
+      "For an attached monic depressed quartic f_P and primitive change gamma, f_P(a,b)=det(gamma)^2; depression forces the directional derivative to be divisible by det(gamma).",
+      "At p>3 with v_p(B)=2e, e=1 or 2, a nonintegral change must have determinant valuation e. Its primitive first row specifies only one possible nontrivial lattice class.",
+      "When x(P) is a unit, that class is centered at t=y/x modulo p^e. Its square-value condition requires B/p^(2e) to be a quadratic residue.",
+      "When p divides x(P), local solubility already forces B/p^(2e) to be a quadratic residue. Then v_p(y)=e; the derivative condition bounds v_p(det) by e, and the square-value condition forces equality and a/b=0 modulo p^e.",
+      "Thus the expected local class count is at most two in the split case and one in the inert case. Counting square values alone, without the derivative condition, is insufficient."
+    ],
+    "global_route_to_audit": [
+      "Work over Z[S^-1] with S the primes dividing 6d. Separate the at most 4*2^rank rational quartic orbits.",
+      "Use local lattice classes and class number one to bound the number of relevant PGL2(Z[S^-1]) classes by the product of their local counts.",
+      "Within each such class apply the uniform quartic Thue-Mahler bound, with S fixed, to the monic normalization; depression controls the remaining row.",
+      "Check row/action conventions, stabilizers and S-unit quotients explicitly before making a theorem claim."
+    ],
+    "novelty_audit": "Cremona-Fisher-Stoll and Sadek already supply minimal-model theory. Sadek counts all models, including ones without a smooth residue-field point. Potential new content is the restricted count for the monic models in Alpoge-Ho's construction and its point-count consequence. Targeted searches did not locate this exact stated consequence; this is not proof of novelty."
+  },
+  "broader_candidate": {
+    "setting": "Integral short Weierstrass model minimal outside a finite set S containing 2 and 3",
+    "proposed_bound": "#E(Z) <<_S 2^rank * product_(p outside S) (c_p + |G_p[2]|)/2, where G_p=Phi_p(F_p), c_p=|G_p|",
+    "status": "Geometric extension to investigate; less thoroughly checked than the cubic-twist candidate.",
+    "mechanism": "A monic quartic supplies two distinct smooth sections at infinity away from 2. Sadek's degree-two component configurations must therefore contain rational multiplicity-one components. For a fixed divisor class P, unordered pairs a+b=P in G_p number (c_p + #{a:2a=P})/2.",
+    "tests": "Component-pair identity checked for C1, C2, C3, C4, C6, C2xC2, for every target in each group.",
+    "prospective_consequence": "If all c_p=1 outside fixed S, obtain a constant times 2^rank bound independent of the number of those bad primes.",
+    "limitations": "Must preserve the chosen integral model, local minimality and marked-model identifications. Do not assert this for arbitrary nonminimal models with a universal constant."
+  },
+  "experiments": {
+    "script": "local_model_checks.py",
+    "results": "local_model_results.json",
+    "cases": 80,
+    "residues_checked": 1888944,
+    "counterexamples": 0,
+    "scope": "p=5,7,11; v_p(B)=1,2,4,5; every nonzero unit modulo p; selected smooth local points x=1. Does not exhaust all local points, test gluing, or prove novelty."
+  },
+  "new_sources": [
+    {
+      "authors": "Mohammad Sadek",
+      "title": "Counting Models of Genus One Curves",
+      "url": "https://arxiv.org/abs/1002.0467",
+      "focus": "Theorem 4.2; Corollary 4.3 and Table 1; Theorem 6.1; marked minimal models and global product formula",
+      "assessment": "Main prior-work lead. Nonsplit IV has two minimal models in the table, IV* has three, II* has three; smooth-section restriction is essential to the smaller candidate counts."
+    },
+    {
+      "authors": "John Cremona, Tom Fisher and Michael Stoll",
+      "title": "Minimisation and reduction of 2-, 3- and 4-coverings of elliptic curves",
+      "url": "https://arxiv.org/abs/0908.1741",
+      "focus": "Section 3: minimisation theorems; explicit models associated to O+P; nonuniqueness remark points to Sadek"
+    },
+    {
+      "authors": "Peter Koymans and Alexander Smith",
+      "title": "Tamagawa ratios and unbounded Selmer moments",
+      "url": "https://arxiv.org/abs/2606.31649",
+      "submitted": "2026-06-30",
+      "version_inspected": "v1",
+      "focus": "Introduction; Example 7.1; Example 7.5 on cubic twists; Example 7.7 on distribution/moment mismatch",
+      "assessment": "New since the first source audit. Gives logarithmic growth for cubic-twist 3-Selmer moments in its specified sampling framework. Does not itself certify uniform integrability of the modified rank proxy used in the earlier calculation. Exact sampling restrictions must be checked before quoting formulas for all n."
+    },
+    {
+      "authors": "Jie Shu",
+      "title": "Selmer ranks in twists of CM abelian varieties",
+      "url": "https://arxiv.org/abs/2504.21274",
+      "version_inspected": "v2",
+      "focus": "Introduction and Theorems 1.1, 1.4",
+      "assessment": "Uses fan-structure stratification over fields containing relevant roots of unity. Cannot substitute this distribution for natural-height averages over rational cubic twists."
+    },
+    {
+      "authors": "Peter Koymans",
+      "title": "Current publication list",
+      "url": "https://webspace.science.uu.nl/~koyma001/publications.html",
+      "assessment": "Lists the June 2026 moments preprint and the 2024 rational-cubes paper. No completed cubic-twist 100%-rank-at-most-one paper identified here; earlier slide announcement remains labelled in progress."
+    }
+  ],
+  "previous_ideas": {
+    "rank_moment_transfer": "Still a plausible consequence of ABS first-moment control plus the KS modified-rank distribution for test functions o(2^r); novelty remains doubtful. No extension to the q=2 endpoint established.",
+    "zero_average_cubic_twist_integral_points": "Still a harder open research direction in this audit. Density-zero support plus a bounded first moment does not imply mean tending to zero. The improved local factors alone do not resolve the necessary tail control.",
+    "thin_inert_supported_families": "Do not import ABS natural-density average bounds into this density-zero subfamily without a separate sieve/uniformity argument."
+  }
+}
