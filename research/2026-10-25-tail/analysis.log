@@ -1,0 +1,129 @@
+Fontconfig error: No writable cache directories
+Verified T=4: 137 tail rows; M3=175.442144873
+Verified T=8: 2,717 tail rows; M3=106.422445090
+Verified T=16: 64,733 tail rows; M3=61.745210434
+Verified T=32: 1,482,407 tail rows; M3=33.839977899
+{
+  "tripling_family": [
+    {
+      "T": 4,
+      "admissible_models": 70,
+      "constructed_models_beyond_direct_cutoff": 1,
+      "additional_signed_points_beyond_direct_cutoff": 2,
+      "largest_point": {
+        "A": 1,
+        "B": 64,
+        "b": 8,
+        "x": 16777728,
+        "y": 68722622488
+      }
+    },
+    {
+      "T": 8,
+      "admissible_models": 280,
+      "constructed_models_beyond_direct_cutoff": 46,
+      "additional_signed_points_beyond_direct_cutoff": 92,
+      "largest_point": {
+        "A": 1,
+        "B": 484,
+        "b": 22,
+        "x": 7256317728,
+        "y": 618122334258242
+      }
+    },
+    {
+      "T": 16,
+      "admissible_models": 1084,
+      "constructed_models_beyond_direct_cutoff": 362,
+      "additional_signed_points_beyond_direct_cutoff": 724,
+      "largest_point": {
+        "A": 1,
+        "B": 4096,
+        "b": 64,
+        "x": 4398046543872,
+        "y": 9223372139933991104
+      }
+    },
+    {
+      "T": 32,
+      "admissible_models": 3852,
+      "constructed_models_beyond_direct_cutoff": 1824,
+      "additional_signed_points_beyond_direct_cutoff": 3648,
+      "largest_point": {
+        "A": 1,
+        "B": 32761,
+        "b": 181,
+        "x": 2250357013195272,
+        "y": 106752273972468818913791
+      }
+    }
+  ],
+  "tripled_T8_catalog": {
+    "nonnegative_input_points": 90756,
+    "finite_triples_tested": 90708,
+    "distinct_integral_triples": 2897,
+    "distinct_points_beyond_direct_search": 52,
+    "largest_examples": [
+      [
+        -59,
+        74,
+        7257247018,
+        618241079050562
+      ],
+      [
+        1,
+        484,
+        7256317728,
+        618122334258242
+      ],
+      [
+        -1,
+        484,
+        7256309984,
+        618121344760898
+      ],
+      [
+        1,
+        441,
+        5489035272,
+        406671775923231
+      ],
+      [
+        -1,
+        441,
+        5489028216,
+        406670991775839
+      ],
+      [
+        1,
+        400,
+        4096003200,
+        262144307200060
+      ],
+      [
+        -1,
+        400,
+        4095996800,
+        262143692800060
+      ],
+      [
+        1,
+        361,
+        3010939272,
+        165216338968409
+      ],
+      [
+        -1,
+        361,
+        3010933496,
+        165215863557401
+      ],
+      [
+        1,
+        324,
+        2176784928,
+        101560138066998
+      ]
+    ]
+  }
+}

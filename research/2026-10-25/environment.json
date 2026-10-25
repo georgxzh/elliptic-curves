@@ -1,0 +1,27 @@
+{
+  "research_date": "2026-10-25",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "matplotlib": "3.10.8"
+  },
+  "scales": [
+    4,
+    8,
+    16,
+    24,
+    32
+  ],
+  "cutoffs": [
+    4,
+    16,
+    64,
+    256
+  ],
+  "random_sampling": false,
+  "count_definition": "Signed affine integral points with |x| <= L*T; y=0 counted once; singular models excluded."
+}
