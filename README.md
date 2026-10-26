@@ -1,5 +1,12 @@
 # Elliptic-curve research
 
+[Sixth-power-free continuation](research/2026-10-25-inert/astra/README.md):
+an Astra-derived proof draft with explicit local factors for every
+sixth-power-free Mordell coefficient B. For squarefree B it gives
+`#E_B(Z) << 2^rank` with an absolute constant. Includes separate AI audits,
+1,285,032 additional residue checks, symbolic verification, and a comparison
+with the already known rank-only bounds. Human review and novelty are open.
+
 [Inert-prime refinement](research/2026-10-25-inert/README.md): a complete proof
 draft of the bound `#E_d,n(Z) <<_d 2^(rank + omega_split(n))` for cube-free n,
 using a local two-lattice classification and a global fibre count. Includes

@@ -1,5 +1,11 @@
 # Inert-prime refinement of the integral-point bound
 
+The [Astra continuation](astra/README.md) now gives an exact local
+classification for all sixth-power-free Mordell coefficients, including the
+new valuation-one, three and five cases. Its squarefree corollary is an
+absolute `#E_B(Z) << 2^rank` bound. The continuation includes separate AI
+audits, additional checks, and a comparison with earlier rank-only results.
+
 The candidate now has a complete proof draft of the stronger estimate
 
 \[
