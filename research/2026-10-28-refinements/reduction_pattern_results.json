@@ -1,0 +1,50 @@
+{
+  "counts": {
+    "local_point_samples": 2580,
+    "residues_examined": 642516,
+    "m=2,unit_to_singular": 155564,
+    "m=2,singular_to_unit": 155564,
+    "m=4,unit_to_singular": 9460,
+    "m=4,singular_to_unit": 9460
+  },
+  "examples": {
+    "m=2,unit_to_singular": {
+      "p": 5,
+      "B": 25,
+      "source_x": 1,
+      "source_y_mod_p7": 25326,
+      "first_row_z": 1,
+      "det_unit_mod_p": 2,
+      "target_x_mod_p": 0
+    },
+    "m=2,singular_to_unit": {
+      "p": 5,
+      "B": 25,
+      "source_x": 0,
+      "source_y_mod_p7": 5,
+      "first_row_z": 10,
+      "det_unit_mod_p": 1,
+      "target_x_mod_p": 4
+    },
+    "m=4,unit_to_singular": {
+      "p": 5,
+      "B": 625,
+      "source_x": 1,
+      "source_y_mod_p7": 39376,
+      "first_row_z": 1,
+      "det_unit_mod_p": 2,
+      "target_x_mod_p": 0
+    },
+    "m=4,singular_to_unit": {
+      "p": 5,
+      "B": 625,
+      "source_x": 0,
+      "source_y_mod_p7": 25,
+      "first_row_z": 50,
+      "det_unit_mod_p": 1,
+      "target_x_mod_p": 4
+    }
+  },
+  "counterexamples": 0,
+  "scope": "Selected p-adic points, all repeated-disk residues mod p^3, both square-root signs. Tests status switching only."
+}
