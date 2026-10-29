@@ -1,5 +1,11 @@
 # Elliptic-curve research
 
+[Exact component quotients and method limits](research/2026-10-29-continuation/README.md):
+average the actual binary quotients to improve the chord bound, characterize
+equality using intersecting codes, and prove that dimension-only estimates
+cannot further lower its exponential base. Includes exhaustive finite checks,
+an exact arithmetic example, and an explicit record of the unfinished audit.
+
 [Global component continuation](research/2026-10-28-refinements/README.md):
 rational chords constrain the tuple of local lattices, giving proof drafts
 with absolute 12^rank bounds for sixth-power-free Mordell coefficients,

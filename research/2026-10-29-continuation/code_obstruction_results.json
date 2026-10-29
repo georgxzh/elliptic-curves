@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "subspace_layout_pairs": 12668,
+  "ordered_disjoint_decomposition_witnesses": 112102,
+  "checked_properties": [
+    "binary_expansion_shortening_identity",
+    "disjoint_decomposition_criterion",
+    "equality_criterion",
+    "nonminimal_word_deficit",
+    "direct_product_example",
+    "binary_simplex_attainment",
+    "ternary_simplex_attainment",
+    "arithmetic_complete_image_example"
+  ],
+  "binary_simplex": [
+    {
+      "dimension": 0,
+      "length": 0,
+      "A": "1"
+    },
+    {
+      "dimension": 1,
+      "length": 1,
+      "A": "3/2"
+    },
+    {
+      "dimension": 2,
+      "length": 3,
+      "A": "5/2"
+    },
+    {
+      "dimension": 3,
+      "length": 7,
+      "A": "9/2"
+    },
+    {
+      "dimension": 4,
+      "length": 15,
+      "A": "17/2"
+    },
+    {
+      "dimension": 5,
+      "length": 31,
+      "A": "33/2"
+    },
+    {
+      "dimension": 6,
+      "length": 63,
+      "A": "65/2"
+    },
+    {
+      "dimension": 7,
+      "length": 127,
+      "A": "129/2"
+    },
+    {
+      "dimension": 8,
+      "length": 255,
+      "A": "257/2"
+    }
+  ],
+  "ternary_simplex": [
+    {
+      "dimension": 0,
+      "length": 0,
+      "support_count": 1
+    },
+    {
+      "dimension": 1,
+      "length": 1,
+      "support_count": 2
+    },
+    {
+      "dimension": 2,
+      "length": 4,
+      "support_count": 5
+    },
+    {
+      "dimension": 3,
+      "length": 13,
+      "support_count": 14
+    },
+    {
+      "dimension": 4,
+      "length": 40,
+      "support_count": 41
+    },
+    {
+      "dimension": 5,
+      "length": 121,
+      "support_count": 122
+    },
+    {
+      "dimension": 6,
+      "length": 364,
+      "support_count": 365
+    }
+  ],
+  "arithmetic_example": {
+    "B": -166375,
+    "T": [
+      55,
+      0
+    ],
+    "P": [
+      130,
+      1425
+    ],
+    "P_plus_T": [
+      176,
+      -2299
+    ],
+    "component_primes": [
+      5,
+      11
+    ],
+    "labels_T_P_P_plus_T": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "image_dimension": 2,
+    "A": "9/4",
+    "dimension_bound": "5/2"
+  },
+  "scope": "Simplex-code sharpness is abstract, with no elliptic realization asserted; includes one exact nonextremal arithmetic example."
+}

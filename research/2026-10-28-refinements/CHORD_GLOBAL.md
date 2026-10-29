@@ -202,6 +202,10 @@ primes. This sharpening is optional for the rank-only conclusions above.
 
 ## Limits and evidence
 
+The [subsequent quotient refinement](../2026-10-29-continuation/BINARY_QUOTIENT.md)
+replaces 2^s in the support-count version by A(H_2)<=(2^s+1)/2, using
+the exact local equivalence relation and averaging over global 2-classes.
+
 Known points give only a subgroup of H. Its size must not replace |H|
 as an upper bound without proving that the image is complete. The
 automatic bounds s<=r+1,h<=r+1 require no generator computation.
