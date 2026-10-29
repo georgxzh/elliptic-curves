@@ -1,0 +1,96 @@
+{
+  "counts": {
+    "residues_examined": 1285032,
+    "point_cases": 5780,
+    "admissible_residues": 321328,
+    "zero_values_excluded_by_derivative": 106,
+    "squares_excluded_by_derivative": 356
+  },
+  "coverage": {
+    "m=0,nonunit_x,lattices=1": 50,
+    "m=0,unit_x,lattices=1": 620,
+    "m=1,unit_x,lattices=1": 620,
+    "m=2,nonunit_x,lattices=2": 670,
+    "m=2,unit_x,lattices=1": 310,
+    "m=2,unit_x,lattices=2": 310,
+    "m=3,nonunit_x,lattices=1": 130,
+    "m=3,nonunit_x,lattices=2": 540,
+    "m=3,unit_x,lattices=1": 336,
+    "m=3,unit_x,lattices=2": 116,
+    "m=3,unit_x,lattices=4": 168,
+    "m=4,nonunit_x,lattices=2": 670,
+    "m=4,unit_x,lattices=1": 310,
+    "m=4,unit_x,lattices=2": 310,
+    "m=5,unit_x,lattices=1": 620
+  },
+  "cubic_examples": {
+    "unit_x,lattices=2": {
+      "p": 5,
+      "B": 125,
+      "x": 1,
+      "y": 7876,
+      "nonstandard_lattices": [
+        [
+          2,
+          21
+        ]
+      ]
+    },
+    "nonunit_x,lattices=1": {
+      "p": 5,
+      "B": -125,
+      "x": 5,
+      "y": 0,
+      "nonstandard_lattices": []
+    },
+    "unit_x,lattices=4": {
+      "p": 7,
+      "B": 343,
+      "x": 1,
+      "y": 294295,
+      "nonstandard_lattices": [
+        [
+          2,
+          22
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          2,
+          43
+        ]
+      ]
+    },
+    "unit_x,lattices=1": {
+      "p": 7,
+      "B": 686,
+      "x": 1,
+      "y": 353291,
+      "nonstandard_lattices": []
+    },
+    "nonunit_x,lattices=2": {
+      "p": 7,
+      "B": -343,
+      "x": 7,
+      "y": 0,
+      "nonstandard_lattices": [
+        [
+          1,
+          0
+        ]
+      ]
+    }
+  },
+  "counterexamples": 0,
+  "precision": "p^7; all repeated-disk residues modulo p^3",
+  "primes": [
+    5,
+    7,
+    11,
+    13,
+    19
+  ],
+  "scope": "Finite exact modular checks; does not replace proof or establish novelty."
+}

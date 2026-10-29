@@ -1,0 +1,33 @@
+{
+  "ternary_subspaces_checked": 2913,
+  "ambient_dimension_max": 5,
+  "subspaces_by_ambient_dimension": {
+    "0": 1,
+    "1": 2,
+    "2": 6,
+    "3": 28,
+    "4": 212,
+    "5": 2664
+  },
+  "component_example": {
+    "B": 100,
+    "P": [
+      5,
+      15
+    ],
+    "prime": 5,
+    "labels_of_multiples_0_through_8": [
+      0,
+      2,
+      1,
+      0,
+      2,
+      1,
+      0,
+      2,
+      1
+    ]
+  },
+  "status": "PASS",
+  "scope": "Finite linear algebra and exact rational example; not a proof of global descent or the local quotient classification."
+}

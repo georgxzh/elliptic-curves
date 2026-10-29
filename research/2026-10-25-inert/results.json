@@ -1,0 +1,101 @@
+{
+  "local": {
+    "point_cases_unit_x": 6608,
+    "repeated_disk_residues": 1050696,
+    "necessary_condition_survivors_unit_x": 38600,
+    "point_cases_nonunit_x": 7264,
+    "zero_value_excluded_by_derivative": 7264,
+    "necessary_condition_survivors_nonunit_x": 38600
+  },
+  "matrices": {
+    "integral_base_points": 24,
+    "admissible_signed_matrices": 106,
+    "same_lattice_unimodular_normalizations": 77,
+    "nonstandard_local_lattices_seen_with_multiplicity": 8,
+    "local_groups_with_both_lattices": 4
+  },
+  "examples": [
+    {
+      "d": 104,
+      "n": 5,
+      "p": 5,
+      "P": [
+        -10,
+        40
+      ],
+      "Q": [
+        134,
+        1552
+      ],
+      "matrix": [
+        -5,
+        1,
+        50,
+        -13
+      ],
+      "det": 15
+    },
+    {
+      "d": 104,
+      "n": 5,
+      "p": 5,
+      "P": [
+        1,
+        51
+      ],
+      "Q": [
+        25,
+        -135
+      ],
+      "matrix": [
+        1,
+        1,
+        -15,
+        5
+      ],
+      "det": 20
+    },
+    {
+      "d": 104,
+      "n": 5,
+      "p": 5,
+      "P": [
+        25,
+        135
+      ],
+      "Q": [
+        1,
+        -51
+      ],
+      "matrix": [
+        5,
+        1,
+        -15,
+        1
+      ],
+      "det": 20
+    },
+    {
+      "d": 2504,
+      "n": 25,
+      "p": 5,
+      "P": [
+        1,
+        1251
+      ],
+      "Q": [
+        625,
+        -15675
+      ],
+      "matrix": [
+        1,
+        1,
+        -75,
+        25
+      ],
+      "det": 100
+    }
+  ],
+  "counterexamples": 0,
+  "scope": "Finite exact checks of selected p-adic points, both unit and nonunit x; bounded global points and first rows. Does not certify novelty or replace either proof."
+}

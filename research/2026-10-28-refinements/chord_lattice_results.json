@@ -1,0 +1,72 @@
+{
+  "counts": {
+    "point_samples": 1290,
+    "nonstandard_disk_residues": 321258,
+    "smooth_source_nonstandard_chords": 8840,
+    "unit_determinant_chords": 26520,
+    "denominator_chords": 5160,
+    "singular_source_nonstandard_chords": 303768,
+    "infinite_slope_signed_matrices": 6
+  },
+  "rational_examples": [
+    {
+      "B": -343,
+      "P": [
+        8,
+        13
+      ],
+      "R": [
+        7,
+        0
+      ],
+      "matrix": [
+        13,
+        1,
+        -22,
+        -13
+      ],
+      "determinant": -147,
+      "determinant_valuation": 2
+    },
+    {
+      "B": -343,
+      "P": [
+        154,
+        -1911
+      ],
+      "R": [
+        7,
+        0
+      ],
+      "matrix": [
+        -13,
+        1,
+        -168,
+        13
+      ],
+      "determinant": -1,
+      "determinant_valuation": 0
+    },
+    {
+      "B": -1331,
+      "P": [
+        443,
+        9324
+      ],
+      "R": [
+        11,
+        0
+      ],
+      "matrix": [
+        259,
+        12,
+        -5580,
+        -259
+      ],
+      "determinant": -121,
+      "determinant_valuation": 2
+    }
+  ],
+  "status": "PASS",
+  "scope": "Finite local chord-component checks at valuation three, denominator valuations one/two, and exact rational stabilizers and infinite-slope matrices. Does not replace the general written proof."
+}

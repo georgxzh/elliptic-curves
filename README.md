@@ -1,5 +1,25 @@
 # Elliptic-curve research
 
+[Global component continuation](research/2026-10-28-refinements/README.md):
+rational chords constrain the tuple of local lattices, giving proof drafts
+with absolute 12^rank bounds for sixth-power-free Mordell coefficients,
+6^rank bounds for the fixed-d cubic-twist family, and 2^rank bounds within
+each reduction pattern. Includes component-code savings, a general additive
+extension, reproducible checks, and explicit review and novelty limits.
+
+[Sixth-power-free continuation](research/2026-10-25-inert/astra/README.md):
+an Astra-derived proof draft with explicit local factors for every
+sixth-power-free Mordell coefficient B. For squarefree B it gives
+`#E_B(Z) << 2^rank` with an absolute constant. Includes separate AI audits,
+1,285,032 additional residue checks, symbolic verification, and a comparison
+with the already known rank-only bounds. Human review and novelty are open.
+
+[Inert-prime refinement](research/2026-10-25-inert/README.md): a complete proof
+draft of the bound `#E_d,n(Z) <<_d 2^(rank + omega_split(n))` for cube-free n,
+using a local two-lattice classification and a global fibre count. Includes
+exact verification and a literature audit; independent review and novelty
+remain unresolved.
+
 [October 25, 2026 research runs](research/2026-10-25/README.md): twenty exact
 bounded-coordinate searches motivated by Levent Alpöge's integral-point work,
 with reproducible data, proofs for the truncated problem, independent

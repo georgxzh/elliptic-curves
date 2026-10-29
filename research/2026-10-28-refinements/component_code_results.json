@@ -1,0 +1,31 @@
+{
+  "block_layouts": 16,
+  "checked_properties": [
+    "dimension_bound",
+    "abstract_sharpness",
+    "projection_rank_identity",
+    "monotonicity_for_tested_codimension_one_subspaces",
+    "exact_example_arithmetic"
+  ],
+  "example": {
+    "B": 67821390,
+    "certified_weight_upper_bound": "5/8",
+    "double": [
+      "-719/4",
+      "-62999/8"
+    ],
+    "new_effective_local_product": 10,
+    "nonzero_component_primes": [
+      7,
+      13
+    ],
+    "old_local_product": 16,
+    "point": [
+      "91",
+      "8281"
+    ]
+  },
+  "maximum_ambient_dimension": 6,
+  "status": "PASS",
+  "subspace_layout_pairs": 12668
+}

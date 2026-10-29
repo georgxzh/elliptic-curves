@@ -1,0 +1,234 @@
+{
+  "date": "2026-10-28",
+  "primes": [
+    5,
+    7
+  ],
+  "model_count": 110,
+  "point_count": 1166,
+  "all_finite_lattice_checks_passed": true,
+  "symbolic_checks": [
+    "unit_point_expansion",
+    "quartic_discriminant",
+    "status_switching_coefficient"
+  ],
+  "models": [
+    {
+      "p": 5,
+      "type": "I0*",
+      "count": 20
+    },
+    {
+      "p": 5,
+      "type": "II",
+      "count": 4
+    },
+    {
+      "p": 5,
+      "type": "II*",
+      "count": 4
+    },
+    {
+      "p": 5,
+      "type": "III",
+      "count": 4
+    },
+    {
+      "p": 5,
+      "type": "III*",
+      "count": 4
+    },
+    {
+      "p": 5,
+      "type": "IV",
+      "count": 4
+    },
+    {
+      "p": 5,
+      "type": "IV*",
+      "count": 4
+    },
+    {
+      "p": 7,
+      "type": "I0*",
+      "count": 42
+    },
+    {
+      "p": 7,
+      "type": "II",
+      "count": 4
+    },
+    {
+      "p": 7,
+      "type": "II*",
+      "count": 4
+    },
+    {
+      "p": 7,
+      "type": "III",
+      "count": 4
+    },
+    {
+      "p": 7,
+      "type": "III*",
+      "count": 4
+    },
+    {
+      "p": 7,
+      "type": "IV",
+      "count": 4
+    },
+    {
+      "p": 7,
+      "type": "IV*",
+      "count": 4
+    }
+  ],
+  "points": [
+    {
+      "p": 5,
+      "type": "I0*",
+      "x_status": "nonunit",
+      "count": 20
+    },
+    {
+      "p": 5,
+      "type": "I0*",
+      "x_status": "unit",
+      "count": 120
+    },
+    {
+      "p": 5,
+      "type": "II",
+      "x_status": "unit",
+      "count": 24
+    },
+    {
+      "p": 5,
+      "type": "II*",
+      "x_status": "unit",
+      "count": 24
+    },
+    {
+      "p": 5,
+      "type": "III",
+      "x_status": "nonunit",
+      "count": 22
+    },
+    {
+      "p": 5,
+      "type": "III",
+      "x_status": "unit",
+      "count": 24
+    },
+    {
+      "p": 5,
+      "type": "III*",
+      "x_status": "nonunit",
+      "count": 4
+    },
+    {
+      "p": 5,
+      "type": "III*",
+      "x_status": "unit",
+      "count": 24
+    },
+    {
+      "p": 5,
+      "type": "IV",
+      "x_status": "nonunit",
+      "count": 26
+    },
+    {
+      "p": 5,
+      "type": "IV",
+      "x_status": "unit",
+      "count": 24
+    },
+    {
+      "p": 5,
+      "type": "IV*",
+      "x_status": "nonunit",
+      "count": 18
+    },
+    {
+      "p": 5,
+      "type": "IV*",
+      "x_status": "unit",
+      "count": 24
+    },
+    {
+      "p": 7,
+      "type": "I0*",
+      "x_status": "nonunit",
+      "count": 39
+    },
+    {
+      "p": 7,
+      "type": "I0*",
+      "x_status": "unit",
+      "count": 378
+    },
+    {
+      "p": 7,
+      "type": "II",
+      "x_status": "unit",
+      "count": 36
+    },
+    {
+      "p": 7,
+      "type": "II*",
+      "x_status": "unit",
+      "count": 36
+    },
+    {
+      "p": 7,
+      "type": "III",
+      "x_status": "nonunit",
+      "count": 45
+    },
+    {
+      "p": 7,
+      "type": "III",
+      "x_status": "unit",
+      "count": 36
+    },
+    {
+      "p": 7,
+      "type": "III*",
+      "x_status": "nonunit",
+      "count": 6
+    },
+    {
+      "p": 7,
+      "type": "III*",
+      "x_status": "unit",
+      "count": 36
+    },
+    {
+      "p": 7,
+      "type": "IV",
+      "x_status": "nonunit",
+      "count": 76
+    },
+    {
+      "p": 7,
+      "type": "IV",
+      "x_status": "unit",
+      "count": 36
+    },
+    {
+      "p": 7,
+      "type": "IV*",
+      "x_status": "nonunit",
+      "count": 52
+    },
+    {
+      "p": 7,
+      "type": "IV*",
+      "x_status": "unit",
+      "count": 36
+    }
+  ],
+  "limitations": "Finite examples support the proof; no independent human review or formal verification."
+}
