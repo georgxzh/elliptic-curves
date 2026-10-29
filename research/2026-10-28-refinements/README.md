@@ -1,5 +1,9 @@
 # Global component refinements of the integral-point bound
 
+The [October 29 continuation](../2026-10-29-continuation/README.md) sharpens
+the binary component factor by averaging exact quotients and proves a
+dimension-only obstruction to reducing the exponential base further.
+
 This continuation develops the earlier local prime factors into global
 compatibility bounds. The main new proof draft uses rational chords to show
 that all the local lattice choices of a transformation come from one rational

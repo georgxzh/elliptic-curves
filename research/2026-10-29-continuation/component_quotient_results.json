@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "maximum_ambient_dimension": 6,
+  "subspaces_by_ambient_dimension": [
+    1,
+    2,
+    5,
+    16,
+    67,
+    374,
+    2825
+  ],
+  "subspace_layout_pairs": 12668,
+  "block_layouts": 16,
+  "source_component_cases": 113950,
+  "checked_properties": [
+    "exact_fiber_equivalence_and_size",
+    "orbit_average_identity",
+    "dimension_upper_bound",
+    "full_product_formula",
+    "comparison_to_previous_binary_weight_bound"
+  ],
+  "scope": "Finite linear algebra only; not the local arithmetic or global descent."
+}
