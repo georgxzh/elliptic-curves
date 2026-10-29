@@ -60,6 +60,29 @@ def main():
                         assert xr//p%p==x//p%p
                     counts["unit_determinant_chords"]+=1
 
+            # Primitive first row (1,p^j), j=1,2: determinant is a unit,
+            # but the normalized slope has negative valuation. Check both
+            # square-root choices before dividing by the denominator.
+            for j in (1,2):
+                b=p**j
+                value=1-6*x*b*b+8*y*b**3-3*x*x*b**4
+                D=prior.old.lift_sqrt(value,1,p,2*j+3)
+                statuses=[]
+                for sign in (1,-1):
+                    numerator=1-x*b*b+sign*D
+                    valuation=prior.old.vp(numerator,p)-2*j
+                    if valuation<0:
+                        assert valuation==-2*j
+                        statuses.append("nonintegral")
+                    else:
+                        assert numerator%b**2==0
+                        xr=(numerator//b**2)*pow(2,-1,p**3)%p**3
+                        if x%p: assert xr%p
+                        else: assert xr%p==0 and xr//p%p==x//p%p
+                        statuses.append("integral")
+                    counts["denominator_chords"]+=1
+                assert sorted(statuses)==["integral","nonintegral"]
+
     # These exact rational matrices exhibit nonstandard stabilizers as well
     # as a standard matrix with a nonzero chord component at a singular P.
     examples=[]
@@ -75,13 +98,16 @@ def main():
         z=F(a,b);q=F(D,b*b)
         xr=(z*z-x+q)/2;yr=z*(xr-x)+y
         assert (xr,yr)==(p,0)
+        assert prior.old.transform(prior.old.coeffs(x,y),(1,0,0,1))==prior.old.coeffs(x,y)
+        assert prior.old.transform(prior.old.coeffs(x,y),(1,0,0,-1))==prior.old.coeffs(x,-y)
+        counts["infinite_slope_signed_matrices"]+=2
         examples.append({"B":-p**3,"P":[x,y],"R":[p,0],
                          "matrix":list(matrix),"determinant":D,
                          "determinant_valuation":prior.old.vp(D,p)})
     assert counts["smooth_source_nonstandard_chords"]
     assert counts["singular_source_nonstandard_chords"]
     return {"counts":dict(counts),"rational_examples":examples,"status":"PASS",
-            "scope":"Finite local chord-component checks at valuation three, plus exact rational stabilizers; denominator and infinity cases rely on the written proof."}
+            "scope":"Finite local chord-component checks at valuation three, denominator valuations one/two, and exact rational stabilizers and infinite-slope matrices. Does not replace the general written proof."}
 
 
 if __name__=="__main__":

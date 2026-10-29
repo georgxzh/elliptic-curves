@@ -4,7 +4,9 @@
     "nonstandard_disk_residues": 321258,
     "smooth_source_nonstandard_chords": 8840,
     "unit_determinant_chords": 26520,
-    "singular_source_nonstandard_chords": 303768
+    "denominator_chords": 5160,
+    "singular_source_nonstandard_chords": 303768,
+    "infinite_slope_signed_matrices": 6
   },
   "rational_examples": [
     {
@@ -66,5 +68,5 @@
     }
   ],
   "status": "PASS",
-  "scope": "Finite local chord-component checks at valuation three, plus exact rational stabilizers; denominator and infinity cases rely on the written proof."
+  "scope": "Finite local chord-component checks at valuation three, denominator valuations one/two, and exact rational stabilizers and infinite-slope matrices. Does not replace the general written proof."
 }

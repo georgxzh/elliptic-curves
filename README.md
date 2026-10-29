@@ -1,5 +1,12 @@
 # Elliptic-curve research
 
+[Global component continuation](research/2026-10-28-refinements/README.md):
+rational chords constrain the tuple of local lattices, giving proof drafts
+with absolute 12^rank bounds for sixth-power-free Mordell coefficients,
+6^rank bounds for the fixed-d cubic-twist family, and 2^rank bounds within
+each reduction pattern. Includes component-code savings, a general additive
+extension, reproducible checks, and explicit review and novelty limits.
+
 [Sixth-power-free continuation](research/2026-10-25-inert/astra/README.md):
 an Astra-derived proof draft with explicit local factors for every
 sixth-power-free Mordell coefficient B. For squarefree B it gives

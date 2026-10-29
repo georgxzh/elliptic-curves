@@ -1,5 +1,10 @@
 # Sixth-power-free extension and Astra audits
 
+The [global component continuation](../../2026-10-28-refinements/README.md)
+adds fixed-pattern bounds, global compatibility of local lattice choices,
+and uniform bounds with bases 6 and 12. The sharper prime-sensitive and
+squarefree results below remain useful.
+
 The continuation gives a complete proof draft for every nonzero
 sixth-power-free integer B:
 
