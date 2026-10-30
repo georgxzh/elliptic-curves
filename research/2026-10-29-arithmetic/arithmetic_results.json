@@ -1,0 +1,307 @@
+{
+  "status": "PASS",
+  "class_group_certificates": [
+    {
+      "discriminant": -139,
+      "reduced_forms": [
+        [
+          1,
+          1,
+          35
+        ],
+        [
+          5,
+          -1,
+          7
+        ],
+        [
+          5,
+          1,
+          7
+        ]
+      ],
+      "class_group": [
+        3
+      ],
+      "products": [
+        {
+          "exponents": [
+            0
+          ],
+          "reduced_form": [
+            1,
+            1,
+            35
+          ]
+        },
+        {
+          "exponents": [
+            1
+          ],
+          "reduced_form": [
+            5,
+            1,
+            7
+          ]
+        },
+        {
+          "exponents": [
+            2
+          ],
+          "reduced_form": [
+            5,
+            -1,
+            7
+          ]
+        }
+      ],
+      "small_primes_2_and_3": "inert, hence principal"
+    },
+    {
+      "discriminant": -4027,
+      "reduced_forms": [
+        [
+          1,
+          1,
+          1007
+        ],
+        [
+          13,
+          -9,
+          79
+        ],
+        [
+          13,
+          9,
+          79
+        ],
+        [
+          17,
+          -11,
+          61
+        ],
+        [
+          17,
+          11,
+          61
+        ],
+        [
+          19,
+          -1,
+          53
+        ],
+        [
+          19,
+          1,
+          53
+        ],
+        [
+          29,
+          -27,
+          41
+        ],
+        [
+          29,
+          27,
+          41
+        ]
+      ],
+      "class_group": [
+        3,
+        3
+      ],
+      "products": [
+        {
+          "exponents": [
+            0,
+            0
+          ],
+          "reduced_form": [
+            1,
+            1,
+            1007
+          ]
+        },
+        {
+          "exponents": [
+            0,
+            1
+          ],
+          "reduced_form": [
+            17,
+            11,
+            61
+          ]
+        },
+        {
+          "exponents": [
+            0,
+            2
+          ],
+          "reduced_form": [
+            17,
+            -11,
+            61
+          ]
+        },
+        {
+          "exponents": [
+            1,
+            0
+          ],
+          "reduced_form": [
+            13,
+            9,
+            79
+          ]
+        },
+        {
+          "exponents": [
+            1,
+            1
+          ],
+          "reduced_form": [
+            19,
+            1,
+            53
+          ]
+        },
+        {
+          "exponents": [
+            1,
+            2
+          ],
+          "reduced_form": [
+            29,
+            -27,
+            41
+          ]
+        },
+        {
+          "exponents": [
+            2,
+            0
+          ],
+          "reduced_form": [
+            13,
+            -9,
+            79
+          ]
+        },
+        {
+          "exponents": [
+            2,
+            1
+          ],
+          "reduced_form": [
+            29,
+            27,
+            41
+          ]
+        },
+        {
+          "exponents": [
+            2,
+            2
+          ],
+          "reduced_form": [
+            19,
+            -1,
+            53
+          ]
+        }
+      ],
+      "small_primes_2_and_3": "inert, hence principal"
+    }
+  ],
+  "global_component_exclusions": [
+    {
+      "B": -3475,
+      "excluded_component_primes": [
+        5
+      ],
+      "certified_H3_dimension": 0,
+      "known_integral_points": [],
+      "singular_local_certificates": [
+        {
+          "p": 5,
+          "x": 5,
+          "y_mod_p_power": 28980,
+          "modulus": 1953125,
+          "unit_square_root_precision": 8,
+          "derivative_is_unit": true
+        }
+      ]
+    },
+    {
+      "B": -196682707,
+      "excluded_component_primes": [
+        13,
+        17
+      ],
+      "certified_H3_dimension": 0,
+      "known_integral_points": [
+        [
+          1691,
+          68108
+        ],
+        [
+          2027,
+          90176
+        ]
+      ],
+      "singular_local_certificates": [
+        {
+          "p": 13,
+          "x": 13,
+          "y_mod_p_power": 8428282525,
+          "modulus": 10604499373,
+          "unit_square_root_precision": 8,
+          "derivative_is_unit": true
+        },
+        {
+          "p": 17,
+          "x": 17,
+          "y_mod_p_power": 53559526528,
+          "modulus": 118587876497,
+          "unit_square_root_precision": 8,
+          "derivative_is_unit": true
+        }
+      ]
+    }
+  ],
+  "mixed_extremal_example": {
+    "B": 197225,
+    "points_certifying_full_images": [
+      [
+        35,
+        490
+      ],
+      [
+        70,
+        735
+      ]
+    ],
+    "H2_dimension": 2,
+    "H3_dimension": 1,
+    "A": "5/2",
+    "S": 2,
+    "product_A_S": 5,
+    "simultaneous_nonstandard_matrix": [
+      -7,
+      1,
+      -210,
+      35
+    ],
+    "determinant": -35,
+    "source": [
+      -56,
+      147
+    ],
+    "target": [
+      1120,
+      -37485
+    ]
+  },
+  "scope": "Exact form-class certificates, arithmetic and matrix identities; no rank or integral-point completeness assertion."
+}

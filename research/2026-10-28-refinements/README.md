@@ -96,7 +96,8 @@ the general local and global arguments.
 Astra supplied the component-image and additive derivations and scrutinized
 the fixed-pattern lemma. The root agent developed the chord bridge, inspected
 the saved proofs, and added independent symbolic and finite checks. The chord
-bridge's final version still needs a completed separate audit. All results
+bridge now has a [completed separate Astra audit](../2026-10-29-arithmetic/AUDIT.md).
+All results
 remain research drafts pending independent human review, and no best-known
 bound or novelty is claimed. See [literature and status](LITERATURE_AND_STATUS.md).
 

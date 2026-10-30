@@ -141,6 +141,10 @@ it does not certify the elliptic-curve or imported Thue arguments.
 
 ## Review status
 
+Update: a [completed separate Astra audit](../2026-10-29-arithmetic/AUDIT.md)
+now checks the chord bridge, imported hypotheses, and this averaging step.
+The paragraph below records the status at the end of the original run.
+
 Astra identified the quotient K_c in a partial audit. Its run ended at
 a usage limit before it delivered a completed audit document. The root
 agent reconstructed the proof above and wrote the finite checker. The

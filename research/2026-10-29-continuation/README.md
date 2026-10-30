@@ -1,5 +1,9 @@
 # Exact component quotients and the limit of dimension-only counting
 
+The [arithmetic follow-up](../2026-10-29-arithmetic/README.md) completes
+the separate Astra audit, proves a class-group restriction, and gives
+both certified global exclusions and a mixed extremal-image counterexample.
+
 Continuation, 2026-10-29. The main refinement replaces the factor 2^s in
 the earlier rational-chord argument by an average of exact quotient sizes.
 For a nonzero sixth-power-free Mordell coefficient B, the resulting draft is
