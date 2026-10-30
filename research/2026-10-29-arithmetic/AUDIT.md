@@ -296,6 +296,31 @@ presented as an improvement of that rate.
 
 ## 7. Verification and remaining scope
 
+### Additional standard inputs (root-agent application check)
+
+The nonsingular-reduction subgroup is the standard E_0 of Silverman,
+*The Arithmetic of Elliptic Curves*, VII.2, Proposition 2.1; the primary
+text was inspected in the preceding continuation. At every retained p>3,
+v_p(B)<6 makes the short Mordell model minimal, and its reduction is
+the cuspidal cubic. Integral points are in E_0 precisely when x is a
+unit; nonintegral points reduce to its nonsingular point at infinity.
+The local quotient sizes used here are then proved by explicit torsion
+translations in the component notes, not imported without checking.
+
+Mordell--Weil applies because B!=0 makes the projective completion a
+smooth genus-one curve over Q with the rational point O. It gives the
+finite quotient sizes n^r*|E(Q)[n]| used for n=2,3. The Weil-pairing
+bound on rational 3-torsion applies in characteristic zero: two independent
+rational 3-torsion points would force a primitive cube root of unity
+in Q. Rational 2-torsion is bounded directly by the number of rational
+roots of X^3+B. Thus neither image-dimension bound assumes that a list
+of known points generates E(Q), and the two bounds are separate.
+
+The standard ideal-factorization, Hensel, and quadratic-form inputs for
+the new arithmetic certificates are checked separately in
+[CLASS_GROUP_RESTRICTION.md](CLASS_GROUP_RESTRICTION.md), Section 5.
+They are not part of the imported quartic/descent argument.
+
 The symbolic chord checker passed, including both curve equations and
 the actual transformed ordinate. The finite chord/lattice checker passed
 1,290 local point samples at p=5,7,11,13,19, including 5,160 denominator

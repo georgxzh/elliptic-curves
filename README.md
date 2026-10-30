@@ -1,5 +1,11 @@
 # Elliptic-curve research
 
+[Arithmetic restrictions and completed chord audit](research/2026-10-29-arithmetic/README.md):
+a class-group kernel restricts the full ternary component image, with exact
+one- and two-prime exclusion certificates and a criterion for an absolute
+base-two bound. Also records an arithmetic extremal-code counterexample,
+an integral-output experiment, and numerical comparisons with published bounds.
+
 [Exact component quotients and method limits](research/2026-10-29-continuation/README.md):
 average the actual binary quotients to improve the chord bound, characterize
 equality using intersecting codes, and prove that dimension-only estimates

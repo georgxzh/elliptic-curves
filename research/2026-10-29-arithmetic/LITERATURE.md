@@ -71,6 +71,14 @@ they do not give the same uniform Mordell statement by direct substitution.
 Those original proofs were not audited here. Choi's work is listed as a
 preprint, not assumed to have completed journal publication or review.
 
+[Alpoge, *Note on a theorem of Professor X*](https://arxiv.org/html/2109.14328),
+Theorem 1.1, was also checked directly. Its base-two estimate is stated
+for degree at least five and assumes that the polynomial discriminant
+is an S-unit. The remaining constant grows exponentially with |S|.
+The introduction refers the elliptic case back to Alpoge--Ho. Thus this
+is not an absolute base-two theorem for arbitrary Mordell coefficients;
+enlarging S to contain the varying bad primes retains coefficient dependence.
+
 ## Class groups are established descent machinery
 
 The identity Norm(y+sqrt(B))=x^3, factorization of its principal ideal,

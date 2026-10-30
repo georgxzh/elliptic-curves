@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "B": 197225,
+  "source": [
+    "-56",
+    "147"
+  ],
+  "bounded_x_range": [
+    -58,
+    100000
+  ],
+  "bounded_integral_points": 30,
+  "additional_targets_beyond_cutoff": 2,
+  "targets_in_source_2_class": [
+    {
+      "target": [
+        "-56",
+        "147"
+      ],
+      "half_difference": null,
+      "binary_label_of_R": 0,
+      "nonstandard_at_7_and_5": [
+        0,
+        0
+      ]
+    },
+    {
+      "target": [
+        "-56",
+        "-147"
+      ],
+      "half_difference": [
+        "-56",
+        "-147"
+      ],
+      "binary_label_of_R": 6,
+      "nonstandard_at_7_and_5": [
+        0,
+        0
+      ]
+    },
+    {
+      "target": [
+        "1120",
+        "37485"
+      ],
+      "half_difference": [
+        "70",
+        "-735"
+      ],
+      "binary_label_of_R": 3,
+      "nonstandard_at_7_and_5": [
+        1,
+        1
+      ]
+    },
+    {
+      "target": [
+        "1120",
+        "-37485"
+      ],
+      "half_difference": [
+        "35",
+        "-490"
+      ],
+      "binary_label_of_R": 5,
+      "nonstandard_at_7_and_5": [
+        1,
+        1
+      ]
+    },
+    {
+      "target": [
+        "22427440",
+        "106211014035"
+      ],
+      "half_difference": [
+        "35",
+        "490"
+      ],
+      "binary_label_of_R": 5,
+      "nonstandard_at_7_and_5": [
+        1,
+        1
+      ]
+    },
+    {
+      "target": [
+        "22427440",
+        "-106211014035"
+      ],
+      "half_difference": [
+        "5950/169",
+        "1078245/2197"
+      ],
+      "binary_label_of_R": 3,
+      "nonstandard_at_7_and_5": [
+        1,
+        1
+      ]
+    }
+  ],
+  "observed_outputs": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "abstract_possible_outputs": 4,
+  "scope": "Only the stated finite target set is exhausted. Missing outputs may occur at larger integral targets; no uniform deficit is proved."
+}
