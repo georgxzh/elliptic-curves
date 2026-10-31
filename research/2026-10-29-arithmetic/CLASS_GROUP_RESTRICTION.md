@@ -1,5 +1,11 @@
 # A class-group restriction on ternary component images
 
+Follow-up: the [independent Astra audit](../2026-10-30-binary/ASTRA_AUDIT.md)
+checks this statement, denominators, small and ramified primes, signs, and
+uniformity of C. No correction was required under the stated hypotheses.
+The [binary continuation](../2026-10-30-binary/README.md) supplies its
+cubic-algebra counterpart and exact component-image certificates.
+
 Research proof, 2026-10-29. This supplies a concrete arithmetic restriction
 missing from the arbitrary-code estimates. Its norm-descent mechanism is
 classical; novelty of the particular lattice-count consequence is unestablished.
@@ -90,7 +96,8 @@ Consequently the fractional ideal of alpha has the shape
 
 \[
  (\alpha)=\mathfrak a^3\mathfrak j
-       \prod_{p\ {m retained}}
+       \prod_{p\ {
+m retained}}
           (\mathfrak p/\overline{\mathfrak p})^{e_pc_p},  \tag{5}
 \]
 
