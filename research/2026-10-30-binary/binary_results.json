@@ -1,0 +1,115 @@
+{
+  "certificate11": {
+    "character_above_3": 0,
+    "character_at_5": 1,
+    "characters_above_2": [
+      1,
+      1
+    ],
+    "discriminant": -3267,
+    "norm_delta": 25,
+    "radicand": 11,
+    "root_lift_mod_125": 21,
+    "unit_mod_5": 2
+  },
+  "certificate58": {
+    "alpha_minus_beta_squared": [
+      -24,
+      -336,
+      -104
+    ],
+    "character_at_19": [
+      {
+        "character": 0,
+        "lift_mod_6859": 6518,
+        "root": 1,
+        "unit_mod_19": 9,
+        "valuation": 0
+      },
+      {
+        "character": 1,
+        "lift_mod_6859": 5840,
+        "root": 7,
+        "unit_mod_19": 10,
+        "valuation": 2
+      },
+      {
+        "character": 1,
+        "lift_mod_6859": 1360,
+        "root": 11,
+        "unit_mod_19": 15,
+        "valuation": 0
+      }
+    ],
+    "character_at_5": 1,
+    "discriminant": -90828,
+    "norm_alpha": 361,
+    "radicand": 58
+  },
+  "exact_images": [
+    {
+      "A_ambient": "3/2",
+      "A_full_image": "1",
+      "B": -7250,
+      "S": 1,
+      "factorization": {
+        "2": 1,
+        "5": 3,
+        "29": 1
+      },
+      "full_image_size_proved_in_notes": 1,
+      "local_root_labels": [
+        2
+      ],
+      "point": null,
+      "retained_prime": 5
+    },
+    {
+      "A_ambient": "5/2",
+      "A_full_image": "3/2",
+      "B": -397822,
+      "S": 1,
+      "factorization": {
+        "2": 1,
+        "19": 3,
+        "29": 1
+      },
+      "full_image_size_proved_in_notes": 2,
+      "local_root_labels": [
+        1,
+        7,
+        11
+      ],
+      "point": [
+        1463,
+        55955
+      ],
+      "retained_prime": 19
+    },
+    {
+      "A_ambient": "3/2",
+      "A_full_image": "3/2",
+      "B": 11000,
+      "S": 1,
+      "factorization": {
+        "2": 3,
+        "5": 3,
+        "11": 1
+      },
+      "full_image_size_proved_in_notes": 2,
+      "local_root_labels": [
+        3
+      ],
+      "point": [
+        -10,
+        100
+      ],
+      "retained_prime": 5
+    }
+  ],
+  "finite_singular_cases": {
+    "2": 5582,
+    "3": 875,
+    "4": 156
+  }
+}
