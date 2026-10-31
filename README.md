@@ -1,5 +1,12 @@
 # Elliptic-curve research
 
+[Binary ideal-class restrictions and exact images](research/2026-10-30-binary/README.md):
+a maximal-order cubic class-group map restricts the full binary component
+image. Exact character certificates prove a restricted image at 19 and
+exclude a locally admissible integral-quartic lattice. Includes an
+exceptional-prime counterexample, Astra's independent audit of both class
+restrictions, and a quantitative and literature comparison.
+
 [Arithmetic restrictions and completed chord audit](research/2026-10-29-arithmetic/README.md):
 a class-group kernel restricts the full ternary component image, with exact
 one- and two-prime exclusion certificates and a criterion for an absolute
