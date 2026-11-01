@@ -72,6 +72,10 @@ bookkeeping, an explicit description of the missing twists, and a
 correction to the proposed Dirichlet series. The cusp theorem uses
 elementary summatory estimates and an Abelian argument. Its novelty
 in the literature is not established.
+The subsequent two-term cusp calculation in SECOND_ORDER_CUSP.md uses
+the classical Dirichlet hyperbola method and an explicit Abelian
+tail argument. We have not established priority for that specialization
+or its secondary constants either.
 Potentially new analytic content would require the joint fixed-numerator,
 quadratic-character and progression prime asymptotic, or a uniform
 averaged Fourier-tail theorem giving the sharp interval profile.

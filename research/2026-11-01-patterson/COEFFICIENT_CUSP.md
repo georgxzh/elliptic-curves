@@ -231,3 +231,9 @@ integral points without that harmonic decomposition cannot establish
 this law. Identifying the candidate profiles with sharp-interval
 prime averages, or deriving them from integral-point statistics,
 remains open in this project.
+
+A further elementary hyperbola estimate now gives an explicit constant
+after the logarithm, with a smaller summatory error. See
+[SECOND_ORDER_CUSP.md](SECOND_ORDER_CUSP.md). The large secondary
+constant for F_7 quantifies slow convergence of the candidate cusp;
+it does not prove a prime-average limit.
