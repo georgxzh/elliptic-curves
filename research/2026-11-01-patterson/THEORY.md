@@ -113,7 +113,7 @@ using reciprocity gives
 \[
 G_p(a)/\sqrt p=
  \overline{(a/\pi)_3}\widetilde g(\pi)
- \overline{(a/\bar\pi)_3}\widetilde g(\bar\pi).
+ +\overline{(a/\bar\pi)_3}\widetilde g(\bar\pi).
 \tag{2}
 \]
 

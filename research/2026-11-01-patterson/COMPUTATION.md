@@ -5,7 +5,7 @@ asymptotics. All paths below are relative to this directory.
 
 ## Reproduced baseline
 
-On this environment (three CPUs, GCC, Python 3, NumPy 2.3.5, mpmath,
+On this environment (three visible CPUs, two-core quota, GCC, Python 3, NumPy 2.3.5, mpmath,
 cypari 2.5.7):
 
 * `identity_check.py`: 76 primes, 13,882 Fourier-identity checks and 13,806
@@ -71,3 +71,82 @@ primes below 10,000 and multiple K from 2 through 57, including K>p.
 All passed. The test does not use the proposed bias law as an oracle.
 The sextic algorithm is standard finite-field arithmetic; no algorithmic
 novelty is claimed.
+
+## Classical CM acceleration, with orientation fixed
+
+The second acceleration uses classical complex multiplication of
+E_1: y^2=x^3+1, together with exact sextic-coset counting. It is independent
+of additive cubic Gauss sums and of any prime-bias conjecture.
+The standard CM input is that Frobenius lies in the Eisenstein order,
+has norm p and trace a_p(1), and its action on invariant differentials
+is zero. This is classical CM theory for the j=0 curve, not a new result;
+see, for example, Silverman, *Advanced Topics in the Arithmetic of
+Elliptic Curves*, Chapter II (complex multiplication and reduction).
+The explicit choice of generator and twist orientation used here follows.
+
+Write p=a^2+3b^2 with b>0 and a=1 mod3, uniquely for p>3, p=1 mod3.
+The curve E_1 has full rational 2-torsion and the rational point (0,1)
+of order 3 over F_p. Its group order is divisible by 6. Of the six
+possible CM traces
+
+    +/-2a,  +/-(a+3b),  +/-(a-3b),
+
+the last four are odd, because a and b have opposite parity.
+The condition a_p(1)=p+1 mod3 selects 2a among the two even traces.
+The existence and uniqueness of the representation, and these six
+possibilities, follow from factorization of p and the six units in
+the Euclidean Eisenstein ring. Thus the Frobenius element is one of
+a +/- b sqrt(-3).
+
+Choose the embedding into F_p by sqrt(-3) -> D=-a/b mod p. In this
+embedding pi=a+b sqrt(-3) has zero differential, so it is Frobenius;
+its conjugate reduces to 2a != 0. Put z=(1+D)/2, a primitive sixth
+root of unity. If g is the primitive root used for the cosets and
+d=g^((p-1)/6), then d is z or its inverse 1-z. Write s=1 in the
+first case and s=-1 in the second. The ordered traces are
+
+    t_0=2a, t_1=a+s*3b, t_2=-a+s*3b, t_{j+3}=-t_j.
+
+To check the orientation, over the algebraic closure choose u^6=B.
+The isomorphism (x,y)->(u^2 x,u^3 y) from E_1 to E_B transports
+Frobenius to the composition of Frobenius on E_1 with the automorphism
+(x,y)->(d^2 x,d^3 y), d=B^((p-1)/6).
+This automorphism acts on the invariant differential by d^(-1).
+For d=z its CM unit is (1-sqrt(-3))/2. Multiplying pi by that unit
+and taking trace gives a+3b; its square gives -a+3b.
+Conjugating the unit gives the other sign, and cubing gives -1.
+This proves the formula used by cm_traces, including its sign convention.
+
+The remaining optimization pairs B with -B. For p=1 mod12, -1 is a
+sixth power, so half of each of six cosets suffices. For p=7 mod12,
+-1 exchanges cosets j and j+3, so three entire cosets suffice.
+The identity a_p(-B)=rho(-1)a_p(B) then gives both bin contributions.
+Exactly (p-1)/2 steps are needed.
+
+The bin reciprocal also uses exact integers: with
+kp=floor(K*2^32/p), q=floor(kp*B/2^32), and r=K*B-q*p,
+
+    floor((K*B-1)/p) = q + (r>p) - (r==0).
+
+Since 0<B<p<2^32, q is either floor(K*B/p) or one less.
+The formula includes p dividing K. The production CM limit is 30 million,
+so a,b fit int16, products fit uint64, and totals fit int64.
+Representation tables are initialized before the parallel read-only loop.
+
+Use -DCM_FAST in place of -DSEXTIC:
+
+    gcc -O3 -march=native -fopenmp -DCM_FAST mordell_direct.c -lm -o /tmp/mordell_cm
+    OMP_NUM_THREADS=2 /tmp/mordell_cm 7 10000000 24 /tmp/direct_cm_1e7.csv
+    gcc -O3 -march=native -fopenmp check_cm_large.c -lm -o /tmp/check_cm_large
+    /tmp/check_cm_large
+
+The updated small check compares all three algorithms on 166,803 exact
+integer outputs. The large check compares CM to the character-sum
+sextic method on 939 outputs at 32 spread-out primes through 30 million,
+with K=7,24,63, plus 320,000 exact reciprocal-bin checks.
+All passed. The 100,000-prime-limit benchmark CSVs from the CM and
+sextic versions agree in every field; measured one-thread times under
+contention were 1.3 and 5.2 seconds. They are not isolated speed benchmarks.
+The slower 10-million sextic run was stopped after about 21 minutes
+and replaced by the validated CM run; no completed result is attributed
+to the interrupted job.

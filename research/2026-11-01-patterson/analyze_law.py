@@ -72,6 +72,9 @@ def main(path, amax=60, pmin=0):
             i += e * cls[q]
         i %= 3
         G = 1 + 3 * eta[np.arange(len(ps)), i]
+        # The cubic-coset formula only applies to nonzero a mod p.
+        # Historically these few entries were incorrectly assigned a coset.
+        G = np.where(a % ps == 0, ps, G)
         h = G / ps ** (1 / 3)
         mean, err = h.mean(), h.std(ddof=1) / math.sqrt(len(ps))
         cand = candidate(a)

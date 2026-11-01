@@ -85,7 +85,7 @@ No coprimality between m and n is required. Thus
 =2C\sum_{\substack{n\le x^{1/4}\\n\ {\rm squarefree}}}
 n^{-1/3}\lfloor x^{1/6}n^{-2/3}\rfloor
 =2Cx^{1/6}\sum_{\substack{n\le x^{1/4}\\n\ {\rm squarefree}}}\frac1n
-O(x^{1/6}).
+ +O(x^{1/6}).
 \]
 
 The error follows from \(\sum_{n\le Y}n^{-1/3}=O(Y^{2/3})\).

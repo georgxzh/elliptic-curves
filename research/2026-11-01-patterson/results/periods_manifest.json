@@ -1,0 +1,9 @@
+{
+  "limit": 30000000,
+  "records": 928739,
+  "last_prime": 29999989,
+  "bytes": 22289736,
+  "sha256": "8957b44969ec5332930960fd17a25ef63bf32507ac1783caee5a81d336df7310",
+  "full_prime_coverage": true,
+  "bitwise_equal_prefix_records": 74412
+}

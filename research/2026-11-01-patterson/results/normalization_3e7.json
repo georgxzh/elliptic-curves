@@ -1,0 +1,53 @@
+{
+  "W": "exp(4-1/(4*(t-1/2)*(1-t))) on (1/2,1), zero elsewhere",
+  "V": "t^(1/6) W(t)",
+  "integral_W": 0.19190863199791716,
+  "rows": [
+    {
+      "X": 2000000,
+      "primes": 35181,
+      "weighted_mean": 1.6558508770532991,
+      "descriptive_stderr": 0.11251055403203421,
+      "measured_coefficient": 0.42236782491718033,
+      "paired_coefficient": 0.4190947014702808,
+      "literal_printed_coefficient": 0.8381894029405615
+    },
+    {
+      "X": 4000000,
+      "primes": 67036,
+      "weighted_mean": 1.7324448852912129,
+      "descriptive_stderr": 0.09184666678924899,
+      "measured_coefficient": 0.4414521298684118,
+      "paired_coefficient": 0.4190947014702808,
+      "literal_printed_coefficient": 0.8381894029405615
+    },
+    {
+      "X": 8000000,
+      "primes": 128328,
+      "weighted_mean": 1.532722136699449,
+      "descriptive_stderr": 0.07435628299202227,
+      "measured_coefficient": 0.38964523198293866,
+      "paired_coefficient": 0.4190947014702808,
+      "literal_printed_coefficient": 0.8381894029405615
+    },
+    {
+      "X": 16000000,
+      "primes": 245605,
+      "weighted_mean": 1.7487132115994846,
+      "descriptive_stderr": 0.06036707429460454,
+      "measured_coefficient": 0.4448013794907942,
+      "paired_coefficient": 0.4190947014702808,
+      "literal_printed_coefficient": 0.8381894029405615
+    },
+    {
+      "X": 30000000,
+      "primes": 443540,
+      "weighted_mean": 1.7052225984014304,
+      "descriptive_stderr": 0.049891967283479124,
+      "measured_coefficient": 0.4336343670685213,
+      "paired_coefficient": 0.4190947014702808,
+      "literal_printed_coefficient": 0.8381894029405615
+    }
+  ],
+  "note": "Finite data do not prove an asymptotic or refute GRH. No calibrated significance interpretation."
+}
