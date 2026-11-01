@@ -6,7 +6,8 @@
 // Output CSV: one row per (dyadic bin, p mod 12, k) with
 //   count of primes, sum S/p^(5/6), sum (S/p^(5/6))^2.
 //
-// Build: clang -O3 -march=native -fopenmp mordell_direct.c -o mordell_direct
+// Build: gcc -O3 -march=native -fopenmp mordell_direct.c -lm -o mordell_direct
+// Add -DSEXTIC for the exact sextic-coset acceleration (see COMPUTATION.md).
 // Usage: mordell_direct PMIN PMAX K OUT.csv
 #include <math.h>
 #include <omp.h>
@@ -17,6 +18,7 @@
 
 #define MAXK 64
 #define NBIN 40
+#include "sextic_sums.h"
 
 static void sum_S(uint32_t p, uint32_t K, int32_t *T, int8_t *leg, int64_t *S) {
     memset(leg, -1, p);
@@ -62,7 +64,7 @@ int main(int argc, char **argv) {
     uint32_t pmax = (uint32_t)strtoul(argv[2], 0, 10);
     uint32_t K = (uint32_t)strtoul(argv[3], 0, 10);
     if (pmin < 7) pmin = 7;
-    if (K >= MAXK) return 2;
+    if (K < 2 || K >= MAXK || pmax >= (1u << 31) || pmax < pmin) return 2;
     uint8_t *comp = calloc((size_t)pmax + 1, 1);
     for (uint64_t i = 2; i * i <= pmax; i++)
         if (!comp[i])
@@ -87,7 +89,11 @@ int main(int argc, char **argv) {
 #pragma omp for schedule(dynamic, 16)
         for (long long i = (long long)cnt - 1; i >= 0; i--) {
             uint32_t p = primes[i];
+#ifdef SEXTIC
+            sum_S_sextic(p, K, leg, S);
+#else
             sum_S(p, K, T, leg, S);
+#endif
             int bin = 31 - __builtin_clz(p);
             int cls = p % 12 == 1 ? 0 : 1;
             double norm = pow((double)p, 5.0 / 6.0);
