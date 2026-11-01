@@ -1,5 +1,16 @@
 # Elliptic-curve research
 
+[Patterson bias in Mordell traces](research/2026-11-01-patterson/README.md):
+exact Fourier and theta-coefficient reductions, an explicit conditional
+finite-mode theorem, and a proved logarithmic cusp for the candidate
+profile. Includes enlarged computations and a literature normalization
+audit. The joint prime asymptotics and sharp-interval transfer remain open.
+
+[Tractable elliptic curve open problems](reports/Tractable%20elliptic%20curve%20open%20problems.md):
+synthesis of four research notes, with rank records above 29 rechecked
+and announcements, conditional results, certificates, and speculation
+kept distinct.
+
 [Binary ideal-class restrictions and exact images](research/2026-10-30-binary/README.md):
 a maximal-order cubic class-group map restricts the full binary component
 image. Exact character certificates prove a restricted image at 19 and

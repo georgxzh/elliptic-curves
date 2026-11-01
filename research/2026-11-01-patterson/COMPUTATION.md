@@ -67,8 +67,7 @@ OMP_NUM_THREADS=3 /tmp/gauss_periods 7 30000000 /tmp/periods_3e7.bin
 ```
 
 The check compares **166,803 exact integer outputs** for all eligible
-primes below 10,000 and multiple K, including K>p and K=64-1=63 only
-if selected by the test schedule (the actual schedule ends at 57).
+primes below 10,000 and multiple K from 2 through 57, including K>p.
 All passed. The test does not use the proposed bias law as an oracle.
 The sextic algorithm is standard finite-field arithmetic; no algorithmic
 novelty is claimed.
