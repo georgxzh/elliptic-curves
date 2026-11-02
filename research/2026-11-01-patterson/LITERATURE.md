@@ -3,6 +3,14 @@
 Checked 1 November 2026. This is a targeted comparison, not an exhaustive
 novelty search. The calculations do not establish priority.
 
+**Continuation:** the [prime-hypothesis audit](../2026-11-02-prime-audit/PRIME_HYPOTHESES.md)
+now pins down a usable normalized GRH input in the published proof:
+equation (13.20), at angular mode zero, gives primary-prime coefficient C,
+hence rational-prime coefficient C/2 by exact pairing. This resolves the
+constant used by our restricted corollary without identifying it with
+the conflicting literal Theorem 1.1. The finite quadratic/numerator
+twists and growing-frequency estimates are still additional inputs.
+
 ## Sources read and the normalization problem
 
 **Dunn–Radziwiłł**, [Annals 200 (2024), 967–1057](https://annals.math.princeton.edu/2024/200-3/p03),

@@ -6,6 +6,13 @@ The required twisted-prime means and sharp-interval prime limit remain
 conjectural. Both enlarged computations are complete. No breakthrough
 or novelty is claimed.
 
+[The prime-transfer continuation](../2026-11-02-prime-audit/README.md)
+now supplies an independently audited restricted infinite-weight theorem,
+an unconditional smooth cancellation example, and an explicit sharp-window
+criterion. It identifies a normalization-correct GRH input directly in
+Dunn--Radziwill (13.20), and isolates the missing quadratic prime twist
+already needed to separate the two progressions at frequency one.
+
 ## Exact identity and candidate means
 
 For p=1 mod3, put a_p(B)=-sum_x (x^3+B / p), for E_B: y^2=x^3+B,

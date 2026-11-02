@@ -1,5 +1,12 @@
 # Elliptic-curve research
 
+[Prime-transfer audit and restricted analytic results](research/2026-11-02-prime-audit/README.md):
+Astra independently audits the Fourier and cusp reductions. An infinite
+family of weights reduces to the published GRH untwisted first moment;
+a nonzero smooth weight has an unconditional exponentially small trace sum.
+Explicit finite-character hypotheses and a quantitative Fejer criterion
+identify the remaining progression and sharp-window bottlenecks.
+
 [Patterson bias in Mordell traces](research/2026-11-01-patterson/README.md):
 exact Fourier and theta-coefficient reductions, an explicit conditional
 finite-mode theorem, and a proved two-term logarithmic cusp for the

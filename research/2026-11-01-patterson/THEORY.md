@@ -5,6 +5,12 @@ calculations below are proofs. The prime asymptotics explicitly labelled
 as hypotheses have **not** been proved here. See [LITERATURE.md](LITERATURE.md)
 for the normalization conflict in the printed Patterson statements.
 
+The [subsequent prime audit](../2026-11-02-prime-audit/PRIME_HYPOTHESES.md)
+identifies the normalization-correct a=1 input under GRH directly in
+Dunn--Radziwill (13.20). Its restricted infinite-weight transfer and
+sharp-window criterion go beyond the fixed finite-mode reduction below;
+the general JTP hypotheses remain unproved here.
+
 Put \(e(t)=\exp(2\pi it)\), \(C=(2\pi)^{2/3}/(3\Gamma(2/3))\).
 For \(p>3\), define the character-sum trace at every \(B\bmod p\), including
 the singular parameter \(B=0\). Its value there is zero.
