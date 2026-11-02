@@ -24,6 +24,10 @@ int main(void) {
             for (uint32_t k = 1; k < K; k++) {
                 assert(old[k] == fast[k] && old[k] == cm[k]); checks++;
             }
+#ifdef CM_VECTOR
+            sum_S_cm_vector(p,K,cm);
+            for (uint32_t k=1;k<K;k++) assert(old[k]==cm[k]);
+#endif
         }
     }
     printf("exact sextic/CM/reference checks=%lu\n", checks);

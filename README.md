@@ -2,9 +2,11 @@
 
 [Patterson bias in Mordell traces](research/2026-11-01-patterson/README.md):
 exact Fourier and theta-coefficient reductions, an explicit conditional
-finite-mode theorem, and a proved logarithmic cusp for the candidate
-profile. Includes enlarged computations and a literature normalization
-audit. The joint prime asymptotics and sharp-interval transfer remain open.
+finite-mode theorem, and a proved two-term logarithmic cusp for the
+candidate profile. Gauss sums through 30 million and exact direct sums
+through 10 million are complete; the pooled drift shrinks, with a sign
+reversal in one progression. Includes a literature normalization audit.
+The joint prime asymptotics and sharp-interval transfer remain open.
 
 [Tractable elliptic curve open problems](reports/Tractable%20elliptic%20curve%20open%20problems.md):
 synthesis of four research notes, with rank records above 29 rechecked

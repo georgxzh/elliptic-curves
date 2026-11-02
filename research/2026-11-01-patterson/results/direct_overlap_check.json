@@ -1,0 +1,5 @@
+{
+  "full_shared_dyadic_rows": 713,
+  "max_scaled_difference": 9.089442929209304e-15,
+  "explanation": "Compare complete bins below 2^19; the baseline final bin ends at 1 million and cannot be compared directly with a full bin ending at 2^20."
+}

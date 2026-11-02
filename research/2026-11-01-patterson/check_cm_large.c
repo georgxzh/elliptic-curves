@@ -24,6 +24,10 @@ int main(void) {
         for (unsigned k=1; k<K; k++) {
             assert(expected[k]==actual[k]); checks++;
         }
+#ifdef CM_VECTOR
+        sum_S_cm_vector(p,K,actual);
+        for (unsigned k=1;k<K;k++) assert(expected[k]==actual[k]);
+#endif
         uint64_t kp=((uint64_t)K<<32)/p;
         // Deterministic spread of inputs checks the reciprocal bin operation.
         for (uint64_t j=1; j<=10000; j++) {

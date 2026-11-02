@@ -1,0 +1,12 @@
+{
+  "algorithm": "exact CM plus eight-lane paired-coset histogram (CM_VECTOR)",
+  "pmin": 7,
+  "pmax": 10000000,
+  "K": 24,
+  "primes": 332194,
+  "threads": 2,
+  "wall_seconds": 379.0,
+  "cpu_quota_cores": 2,
+  "bytes": 48955,
+  "sha256": "6b1c0446f190d7f24fdd10e44f628c8036994899761888377e5617afb0f25e33"
+}

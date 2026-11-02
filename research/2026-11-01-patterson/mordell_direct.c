@@ -9,6 +9,7 @@
 // Build: gcc -O3 -march=native -fopenmp mordell_direct.c -lm -o mordell_direct
 // Add -DSEXTIC for the exact sextic-coset acceleration (see COMPUTATION.md).
 // Add -DCM_FAST instead for classical CM traces and paired cosets.
+// Add -DCM_VECTOR instead on AVX-512 CPUs for eight exact integer lanes.
 // Usage: mordell_direct PMIN PMAX K OUT.csv
 #include <math.h>
 #include <omp.h>
@@ -21,6 +22,7 @@
 #define NBIN 40
 #include "sextic_sums.h"
 #include "cm_sums.h"
+#include "cm_vector.h"
 
 static void sum_S(uint32_t p, uint32_t K, int32_t *T, int8_t *leg, int64_t *S) {
     memset(leg, -1, p);
@@ -67,7 +69,7 @@ int main(int argc, char **argv) {
     uint32_t K = (uint32_t)strtoul(argv[3], 0, 10);
     if (pmin < 7) pmin = 7;
     if (K < 2 || K >= MAXK || pmax >= (1u << 31) || pmax < pmin) return 2;
-#ifdef CM_FAST
+#if defined(CM_FAST) || defined(CM_VECTOR)
     if (pmax > 30000000) return 2; // int16 representation tables
 #endif
     uint8_t *comp = calloc((size_t)pmax + 1, 1);
@@ -81,7 +83,7 @@ int main(int argc, char **argv) {
     size_t m = 0;
     for (uint32_t n = pmin; n <= pmax; n++)
         if (!comp[n] && n % 3 == 1) primes[m++] = n;
-#ifdef CM_FAST
+#if defined(CM_FAST) || defined(CM_VECTOR)
     init_cm(pmax,comp);
 #endif
     free(comp);
@@ -97,7 +99,9 @@ int main(int argc, char **argv) {
 #pragma omp for schedule(dynamic, 16)
         for (long long i = (long long)cnt - 1; i >= 0; i--) {
             uint32_t p = primes[i];
-#ifdef CM_FAST
+#ifdef CM_VECTOR
+            sum_S_cm_vector(p,K,S);
+#elif defined(CM_FAST)
             sum_S_cm(p,K,S);
 #elif defined(SEXTIC)
             sum_S_sextic(p, K, leg, S);
@@ -131,7 +135,7 @@ int main(int argc, char **argv) {
                             sum1[b][c][k], sum2[b][c][k]);
     fclose(f);
     printf("primes=%zu seconds=%.1f\n", cnt, omp_get_wtime() - t0);
-#ifdef CM_FAST
+#if defined(CM_FAST) || defined(CM_VECTOR)
     free(cm_a); free(cm_b);
 #endif
     return 0;

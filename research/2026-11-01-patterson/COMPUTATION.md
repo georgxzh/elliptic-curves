@@ -150,3 +150,44 @@ contention were 1.3 and 5.2 seconds. They are not isolated speed benchmarks.
 The slower 10-million sextic run was stopped after about 21 minutes
 and replaced by the validated CM run; no completed result is attributed
 to the interrupted job.
+
+## Optional vector implementation
+
+The current CPU supports AVX-512. The optional -DCM_VECTOR implementation
+in cm_vector.h evaluates the same integer recurrence in eight independent
+lanes, with a separate histogram for every lane. There are no colliding
+vector scatter writes. Lane j starts at g^i h^j and steps by h^8;
+the final length modulo 8 entries are handled explicitly. Thus the
+enumerated coset elements are identical to the scalar implementation.
+
+For even K and p>K, the bins for B and -B are j and K-1-j. They are
+folded into a half-sized histogram, with the sign rho(-1) when needed,
+then unfolded before taking prefix sums. The condition p>K ensures
+p does not divide K*B, so no exceptional bin boundary is omitted.
+Odd K and p<=K use the checked scalar version.
+All vector products multiply unsigned 32-bit operands into 64-bit
+results; the existing reciprocal proof applies lane by lane.
+
+    gcc -O3 -march=native -fopenmp -DCM_VECTOR check_sextic.c -lm -o /tmp/check_vector
+    /tmp/check_vector
+    gcc -O3 -march=native -fopenmp -DCM_VECTOR check_cm_large.c -lm -o /tmp/check_vector_large
+    /tmp/check_vector_large
+    gcc -O3 -march=native -fopenmp -DCM_VECTOR mordell_direct.c -lm -o /tmp/mordell_vector
+    OMP_NUM_THREADS=2 /tmp/mordell_vector 7 10000000 24 /tmp/direct_vector_1e7.csv
+
+The optional checks compare vector outputs to the reference sums as
+well as the three scalar algorithms. They pass all 166,803 small
+checks and the 939 large checks (with the documented scalar fallback
+for odd K). The vector 1-million run reproduces all 759 original
+aggregate rows, with exact counts and maximum scaled floating-point
+discrepancy 9.733e-15. It took 15.8 seconds on one thread while
+competing with the two-thread scalar job. The scalar CM 10-million
+run was then also interrupted, and the vector run replaced it.
+Neither interrupted job is reported as a completed numerical result.
+On CPUs without AVX-512 use -DCM_FAST instead; vectorization is an
+optional implementation detail, not a mathematical assumption.
+
+The completed vector run covers all 332,194 eligible primes through
+10 million, K=24, in 379.0 seconds with two threads. Its 943 aggregate
+rows, runtime log, hash, independent prime-count check and drift
+comparison are archived under results/ and described in NUMERICS.md.

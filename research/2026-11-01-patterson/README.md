@@ -1,72 +1,181 @@
-# Cubic Gauss sum bias in Mordell Frobenius traces
+# Cubic Gauss-sum bias in Mordell traces
 
-Started 2026-11-01. Unfinished. The identity below is elementary and checked.
-The limiting law is an **empirical conjecture**, not a theorem. No novelty or
-breakthrough is claimed, and no targeted prior-art search has been done.
+Continuation, 1 November 2026. The rational theta specialization and a
+two-term logarithmic cusp for the candidate profiles are proved below.
+The required twisted-prime means and sharp-interval prime limit remain
+conjectural. Both enlarged computations are complete. No breakthrough
+or novelty is claimed.
 
-## Setup
+## Exact identity and candidate means
 
-For a prime p = 1 mod 3, put a_p(B) = -sum_x (x³+B / p), the Frobenius trace of
-E_B: y² = x³+B, and G_p(a) = sum_x e(a x³/p), which is real. Let
-C = (2π)^(2/3) / (3 Γ(2/3)) = 0.838189.
+For p=1 mod3, put a_p(B)=-sum_x (x^3+B / p), for E_B: y^2=x^3+B,
+and G_p(a)=sum_x exp(2pi i a x^3/p), which is real.
+Let C=(2pi)^(2/3)/(3 Gamma(2/3))=0.83818940294056...
+With rho the quadratic character,
 
-**Exact identity.** With ρ the Legendre symbol mod p,
+    a_p(B) = -(2/sqrt(p)) sum_{a=1}^{(p-1)/2} rho(a) G_p(a) cos(2pi a B/p), p=1 mod4,
+    a_p(B) = -(2/sqrt(p)) sum_{a=1}^{(p-1)/2} rho(a) G_p(a) sin(2pi a B/p), p=3 mod4.
 
-    a_p(B) = -(2/√p) Σ_{a=1}^{(p-1)/2} ρ(a) G_p(a) cos(2π a B/p)   if p = 1 mod 4,
-    a_p(B) = -(2/√p) Σ_{a=1}^{(p-1)/2} ρ(a) G_p(a) sin(2π a B/p)   if p = 3 mod 4.
+Substitution t=x^3+B proves the Fourier identity. The singular parameter
+B=0 is included as a character sum, with value zero.
+The reproduced check covers 13,882 Fourier identities and 13,806 PARI
+trace comparisons over 76 primes; maximum Fourier error was 4.849e-37.
 
-Proof: substitute u = x³+B in the discrete Fourier transform of B ↦ a_p(B).
-`identity_check.py` confirms it for all 76 primes 5 ≤ p < 400 and all B mod p
-(13,882 checks, maximum error 5·10⁻³⁷), and confirms a_p against PARI's `ellap`
-(13,806 checks).
+Write a=a_1 a_2^2 a_3^3, with a_1,a_2 squarefree and coprime. Define
 
-**Conjectural law.** Write a = a₁a₂²a₃³ with a₁, a₂ squarefree and coprime. Then
-the mean of G_p(a)/p^(1/3) over primes p = 1 mod 3 tends to
+    mu(a) = 2C a_1^(-1/3) if a_2=1; 0 otherwise.
 
-    μ(a) = 2C a₁^(-1/3)   if a₂ = 1,      μ(a) = 0   otherwise.
+[THEORY.md](THEORY.md) proves that mu(a)/(2C) is exactly a rational
+specialization of Patterson's cubic theta coefficient, including the
+ramified prime 3 and inert primes. This identifies the arithmetic shape;
+it does not prove a prime-restricted mean.
+The conjecture is that the mean of G_p(a)/p^(1/3) tends to mu(a).
 
-**Consequence of the law, assuming the means may be taken term by term.** With
-X = floor(up) and S_p(X) = Σ_{B=1}^X a_p(B), the mean of S_p(X)/p^(5/6) tends to
+## Conditional theorem and the missing hypotheses
 
-    p = 1 mod 12:  -(1/π) Σ_a m₁(a) sin(2π a u)/a,
-    p = 7 mod 12:  -(1/π) Σ_a m₇(a) (1-cos 2π a u)/a,
+For S_p(X)=sum_{B=1}^X a_p(B), the candidate sharp-interval profiles are
 
-where m₁ = μ on squares and on 3·squares, m₇ = μ on squares and -μ on 3·squares,
-and both vanish elsewhere.
+    F_1(u) = -(1/pi) sum_a m_1(a) sin(2pi a u)/a,
+    F_7(u) = -(1/pi) sum_a m_7(a) (1-cos(2pi a u))/a,
 
-## Evidence
+where m_1=mu on squares and three times squares, m_7=mu on squares
+and -mu on three times squares, and both are zero elsewhere.
+These profiles require more than the untwisted law: quadratic-character
+twists, progression restrictions modulo 12, and an averaged Fourier-tail
+estimate are all needed.
 
-| Test | Data | Result |
+The strongest conditional prime-average theorem here is for a fixed
+trigonometric polynomial in B/p. Its exact finite Fourier identity and
+every required JTP hypothesis appear in [THEORY.md](THEORY.md).
+There is no infinite tail in that theorem. Arbitrary smooth weights do
+not have finite Fourier support. GRH alone is not shown to imply JTP.
+
+## Proved coefficient/profile results
+
+[COEFFICIENT_CUSP.md](COEFFICIENT_CUSP.md) corrects the original heuristic:
+
+    sum mu(a)/a^s = 2C zeta(3s) zeta(s+1/3) / zeta(2s+2/3).
+
+This has a zero, not a double pole, at s=1/6. The double poles occur
+after selecting squares and three times squares. They give a proved
+logarithmic cusp for the defined candidate profiles.
+
+[SECOND_ORDER_CUSP.md](SECOND_ORDER_CUSP.md) strengthens it to
+
+    F_r(u) = -K_r u^(5/6) (log(1/u) + eta_r + o(1)).
+
+| r | K_r | eta_r |
+|---:|---:|---:|
+| 1 | 0.75270166404949 | 2.43107867716781 |
+| 7 | 0.01448038915639 | 16.32567319151816 |
+
+An elementary hyperbola decomposition gives a two-term coefficient
+summatory estimate with error O(x^(2/21)log x). Explicit tail estimates
+justify the oscillatory transfer. The larger eta_7 quantifies slow
+convergence of the candidate cusp; it is not a theorem about finite-prime
+drift or an integral-point count.
+
+## Completed computations and the drift question
+
+| Computation | Coverage | Finding |
 |---|---|---|
-| Law for a ≤ 60 ([law_2e6.json](law_2e6.json)) | 74,412 primes up to 2·10⁶ | chi² 45.5 on 60 rows, max z 2.32, no fitted parameters |
-| Exact integer S_p(X), no Gauss sums ([direct_1e6.csv](direct_1e6.csv)) | primes in [2¹⁶, 10⁶] | chi² 27.3 on 46 grid points, max z 1.56 |
+| Reproduced Gauss baseline | 74,412 primes through 2 million | Original descriptive diagnostic 45.5 reproduced |
+| Reproduced direct baseline | All eligible primes through 1 million | Original descriptive diagnostic 27.3 reproduced |
+| Extended Gauss sums | 928,739 primes through 30 million; 510 frequencies | No compelling counterexample; twists, progressions and dyads retained |
+| Exact direct sums | 332,194 primes through 10 million; 23 thresholds | Pooled drift decreases; class-7 offset reverses sign |
 
-Rows are not independent. In the first test a and ac³ give identical values. In
-the second, u and 1-u are exact mirrors and neighbouring u are correlated. Read
-the chi² values as "no visible disagreement", not as calibrated fits. In the
-second test the measured p = 1 mod 12 values lie slightly below the prediction
-in size and the p = 7 mod 12 values slightly above it, which may be a
-finite-size effect and has not been investigated.
+These squared standardized residual sums are **not calibrated chi-square
+tests**. Frequencies related by cubes coincide; grid points are correlated
+and mirrored. Sample standard errors are descriptive.
 
-## A prediction that failed
+For a=1 and p>=65536, the enlarged Gauss mean is 1.667645 +/- 0.022229,
+against candidate 1.676379. Mixed split/inert products, square factors
+and quadratic twists are included. The largest high-range standardized
+residual is 3.476 and is smaller in the final dyadic range.
 
-The first prediction used only the stationary-phase term ∫e(a t³/p)dt, giving
-mean C a^(-1/3). It is wrong: the a = 1 constant is 2C, a = 4, 9, 25 vanish, and
-G_p(ac³) = G_p(a) is an exact identity it ignores. `analyze_periods.py` still
-prints that failed prediction, so [twisted_2e6.json](twisted_2e6.json) has chi²
-1999 by design. The factor 2 is not explained.
+For the direct comparison, the descriptive amplitude ratios change from
+0.9696 to **0.9919** in class 1, and from 1.0509 to **0.9826** in class 7.
+Thus both pooled absolute offsets shrink; the class-7 offset reverses.
+Dyadic behavior is not monotone. No fitted correction is applied.
+The new pooled maximum absolute standardized residuals are 0.975 and 1.153.
+The candidate-series truncation error is below 3.3e-14, excluding roundoff.
+
+[NUMERICS.md](NUMERICS.md) records all results, outliers, checks, data,
+and the normalization experiment. The old p-dividing-a coset bug is
+corrected and its tiny baseline effect is documented.
+[COMPUTATION.md](COMPUTATION.md) proves the exact CM acceleration and
+records independent integer comparisons. The direct run uses no
+additive Gauss sums or bias conjecture.
+
+## Literature and unsuccessful predictions
+
+[LITERATURE.md](LITERATURE.md) records targeted searches and exact
+hypotheses. Dunn–Radziwill's printed rational-prime coefficient and
+primary-prime convention have a factor-two mismatch under conjugate
+pairing. A September 2026 preprint already documents this issue and
+claims an unconditional first moment. We did not audit its entire
+proof or run its formalization; it is not a newly certified input here.
+Fixed angular twists are not automatically the JTP assumptions above.
+
+Under the explicitly normalized primary-prime hypothesis TP-a, the
+factor 2 in mu comes from the density 1/2 of split rational primes.
+The theta specialization is proved; this prime-twist transfer remains
+an extra hypothesis.
+
+The original stationary-phase-only prediction C a^(-1/3) disagrees
+with the computations and ignores G_p(ac^3)=G_p(a) when p does not
+divide c. The old analyze_periods.py retains that failed prediction,
+explaining the historical diagnostic 1999. A numerical limiting
+constant is not described here as proved.
+
+## Extensions and wider survey
+
+[EXTENSIONS.md](EXTENSIONS.md) separates exact identities from heuristic
+transfers. Sixth-power-free parameters admit exact Mobius inversion,
+but a growing-divisor tail is unresolved. The j=1728 transform is
+quartic **minus quadratic**; omitting the quadratic term is wrong.
+The proposed exponent 3/4 is not proved here. Root-number weighting
+and conductor ordering require a different setup. No integral-point
+explanation of the logarithm is established.
+
+The [survey report](../../reports/Tractable%20elliptic%20curve%20open%20problems.md)
+synthesizes all four supplied notes and rechecks rank records above 29.
+Announcements, lower bounds, conditional equalities and finite
+certificates are kept distinct.
 
 ## Reproduce
 
-```sh
-pip install numpy mpmath cypari
-python identity_check.py
-clang -O3 -march=native -fopenmp gauss_periods.c -o gauss_periods
-clang -O3 -march=native -fopenmp mordell_direct.c -o mordell_direct
-./gauss_periods 7 2000000 periods_2e6.bin
-./mordell_direct 7 1000000 24 direct_1e6.csv
-python analyze_law.py periods_2e6.bin 60
-python compare_direct.py direct_1e6.csv 16
-```
+Python needs numpy and mpmath; the independent PARI check additionally
+needs cypari2 and PARI. GCC needs -lm. Run from this directory:
 
-The binary periods file is not committed. On 16 threads it took 7 seconds.
+    python identity_check.py
+    gcc -O3 -march=native -fopenmp gauss_periods.c -lm -o /tmp/gauss_periods
+    OMP_NUM_THREADS=2 /tmp/gauss_periods 7 30000000 /tmp/periods_3e7.bin
+    python analyze_extended.py /tmp/periods_3e7.bin /tmp/extended_3e7.csv
+    python normalization_check.py /tmp/periods_3e7.bin /tmp/normalization_3e7.json
+    gcc -O3 -march=native -fopenmp -DCM_FAST mordell_direct.c -lm -o /tmp/mordell_cm
+    OMP_NUM_THREADS=2 /tmp/mordell_cm 7 10000000 24 /tmp/direct_1e7.csv
+    python analyze_direct_extended.py /tmp/direct_1e7.csv 10000000 /tmp/direct_1e7.json
+    python check_theory.py /tmp/theory_checks.json
+    python check_second_order.py /tmp/second_order_checks.json
+
+[COMPUTATION.md](COMPUTATION.md) also gives the original baseline
+commands and optional, much faster AVX-512 direct implementation.
+Binary Gauss periods are not committed; their hash and coverage check
+are archived with the compressed analysis CSV. Direct aggregate data
+and comparison JSON are committed.
+
+## Candid final status
+
+* **Proved:** Fourier identities, rational theta specialization, corrected
+  coefficient Dirichlet series, and the two-term cusp of the candidate profiles.
+* **Conditional:** the finite-mode prime theorem under explicit JTP assumptions.
+* **Numerical:** both reproduced baselines, Gauss tests through 30 million,
+  and exact direct sums through 10 million. Pooled drift shrinks without
+  monotone convergence across dyads.
+* **Unknown:** JTP in the needed form, the sharp-window averaged tail,
+  sixth-power-free transfer, quartic and root-number limits, and a link
+  to integral points.
+* **Novelty:** established Fourier, CM, theta and hyperbola machinery is
+  used throughout. The normalization warning is prior work. Priority
+  for the specialized coefficient/profile formulas is not established.
