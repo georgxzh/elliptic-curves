@@ -1,0 +1,220 @@
+{
+  "quartic": {
+    "symbolic_identities": 3,
+    "exact_parameter_pairs": 467,
+    "method": "SymPy squarefree part and exact real-root count",
+    "integer_grid": [
+      -10,
+      10
+    ],
+    "includes_rational_triple_roots": true
+  },
+  "counts": {
+    "prime_limit": 101,
+    "parameter_classes": 1161,
+    "prime_results": [
+      {
+        "p": 2,
+        "constant_count_classes": [
+          0,
+          1
+        ]
+      },
+      {
+        "p": 3,
+        "constant_count_classes": [
+          0,
+          1
+        ]
+      },
+      {
+        "p": 5,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 7,
+        "constant_count_classes": []
+      },
+      {
+        "p": 11,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 13,
+        "constant_count_classes": []
+      },
+      {
+        "p": 17,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 19,
+        "constant_count_classes": []
+      },
+      {
+        "p": 23,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 29,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 31,
+        "constant_count_classes": []
+      },
+      {
+        "p": 37,
+        "constant_count_classes": []
+      },
+      {
+        "p": 41,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 43,
+        "constant_count_classes": []
+      },
+      {
+        "p": 47,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 53,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 59,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 61,
+        "constant_count_classes": []
+      },
+      {
+        "p": 67,
+        "constant_count_classes": []
+      },
+      {
+        "p": 71,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 73,
+        "constant_count_classes": []
+      },
+      {
+        "p": 79,
+        "constant_count_classes": []
+      },
+      {
+        "p": 83,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 89,
+        "constant_count_classes": [
+          0
+        ]
+      },
+      {
+        "p": 97,
+        "constant_count_classes": []
+      },
+      {
+        "p": 101,
+        "constant_count_classes": [
+          0
+        ]
+      }
+    ]
+  },
+  "polynomial": {
+    "finite_prefix_counterexamples": 8,
+    "finite_difference_examples": 3,
+    "scope": "illustrations only; universal result rests on written proof"
+  },
+  "reserves": {
+    "consecutive_residue_primes": [
+      3,
+      7,
+      11,
+      19,
+      23,
+      31,
+      43,
+      47,
+      59,
+      67,
+      71,
+      79,
+      83,
+      103,
+      107,
+      127,
+      131,
+      139,
+      151,
+      163,
+      167,
+      179,
+      191,
+      199
+    ],
+    "triangle_perimeter": "12",
+    "triangle_area_squared": "36",
+    "tangent_B_range": [
+      -100,
+      100
+    ],
+    "tangent_x_range": [
+      -50,
+      100
+    ],
+    "integral_nonvertical_start_points": 158,
+    "two_step_survivors": [
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        -3
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ]
+  }
+}
