@@ -1,5 +1,9 @@
 # Prime-transfer audit: special weights and the precise missing estimates
 
+**Continuation:** the [Q4 report](../2026-11-10-q4/README.md) proves a
+GRH balanced-block estimate, diagnoses the finite-character proof gap,
+and improves a sufficient smoothing cutoff. It does not prove Q4.
+
 Continuation of 7027a5b on research/continuation-2026-11.
 The previous Fourier and two-term cusp proofs pass an independent
 **Astra** audit. This continuation proves a restricted transfer without

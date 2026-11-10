@@ -1,5 +1,11 @@
 # Elliptic-curve research
 
+[Quadratic-twist Q4 continuation](research/2026-11-10-q4/README.md):
+a GRH power saving for balanced prime-factor bilinear sums, independently
+audited by Astra. Includes a counterexample to unrestricted coefficient
+twisting, an exact modulus-4 transform, a proof-level literature audit,
+and sharper sufficient smoothing criteria. Q4 itself remains unresolved.
+
 [Prime-transfer audit and restricted analytic results](research/2026-11-02-prime-audit/README.md):
 Astra independently audits the Fourier and cusp reductions. An infinite
 family of weights reduces to the published GRH untwisted first moment;
