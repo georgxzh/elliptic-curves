@@ -1,5 +1,11 @@
 # Elliptic-curve research
 
+[Completed Type I transformation and residue](research/2026-11-12-type-i/README.md):
+an unconditional modulus-4 transformation and zero-residue theorem for
+the correctly cube-completed quadratic-twisted sum, independently audited
+by Astra. Includes exact cyclotomic checks and the required level/error
+budget. The sharper uniform de-completed estimate and Q4 remain open.
+
 [Quadratic-twist Q4 continuation](research/2026-11-10-q4/README.md):
 a GRH power saving for balanced prime-factor bilinear sums, independently
 audited by Astra. Includes a counterexample to unrestricted coefficient

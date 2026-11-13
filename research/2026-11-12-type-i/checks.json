@@ -1,0 +1,401 @@
+{
+  "cases": [
+    {
+      "r": [
+        1,
+        0
+      ],
+      "norm": 1,
+      "quotient_size": 16,
+      "cyclotomic_order": 12,
+      "fourier_residues_checked": 16,
+      "transformed_values_checked": 16,
+      "selected_values": null
+    },
+    {
+      "r": [
+        1,
+        3
+      ],
+      "norm": 7,
+      "quotient_size": 112,
+      "cyclotomic_order": 84,
+      "fourier_residues_checked": 112,
+      "transformed_values_checked": 112,
+      "selected_values": null
+    },
+    {
+      "r": [
+        4,
+        3
+      ],
+      "norm": 13,
+      "quotient_size": 208,
+      "cyclotomic_order": 156,
+      "fourier_residues_checked": 208,
+      "transformed_values_checked": 11,
+      "selected_values": [
+        {
+          "v": [
+            0,
+            0
+          ],
+          "ramanujan": 12
+        },
+        {
+          "v": [
+            1,
+            0
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            0,
+            1
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            1,
+            1
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            1,
+            2
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            2,
+            0
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            1,
+            2
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            4,
+            3
+          ],
+          "ramanujan": 12
+        },
+        {
+          "v": [
+            8,
+            6
+          ],
+          "ramanujan": 12
+        },
+        {
+          "v": [
+            5,
+            3
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            4,
+            3
+          ],
+          "ramanujan": 12
+        }
+      ]
+    },
+    {
+      "r": [
+        -2,
+        3
+      ],
+      "norm": 19,
+      "quotient_size": 304,
+      "cyclotomic_order": 228,
+      "fourier_residues_checked": 304,
+      "transformed_values_checked": 11,
+      "selected_values": [
+        {
+          "v": [
+            0,
+            0
+          ],
+          "ramanujan": 18
+        },
+        {
+          "v": [
+            1,
+            0
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            0,
+            1
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            1,
+            1
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            1,
+            2
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            2,
+            0
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            1,
+            2
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            -2,
+            3
+          ],
+          "ramanujan": 18
+        },
+        {
+          "v": [
+            -4,
+            6
+          ],
+          "ramanujan": 18
+        },
+        {
+          "v": [
+            -1,
+            3
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            -2,
+            3
+          ],
+          "ramanujan": 18
+        }
+      ]
+    },
+    {
+      "r": [
+        -5,
+        0
+      ],
+      "norm": 25,
+      "quotient_size": 400,
+      "cyclotomic_order": 300,
+      "fourier_residues_checked": 400,
+      "transformed_values_checked": 11,
+      "selected_values": [
+        {
+          "v": [
+            0,
+            0
+          ],
+          "ramanujan": 24
+        },
+        {
+          "v": [
+            1,
+            0
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            0,
+            1
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            1,
+            1
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            1,
+            2
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            2,
+            0
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            1,
+            2
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            -5,
+            0
+          ],
+          "ramanujan": 24
+        },
+        {
+          "v": [
+            -10,
+            0
+          ],
+          "ramanujan": 24
+        },
+        {
+          "v": [
+            -4,
+            0
+          ],
+          "ramanujan": -1
+        },
+        {
+          "v": [
+            -5,
+            0
+          ],
+          "ramanujan": 24
+        }
+      ]
+    },
+    {
+      "r": [
+        7,
+        0
+      ],
+      "norm": 49,
+      "quotient_size": 784,
+      "cyclotomic_order": 588,
+      "fourier_residues_checked": 784,
+      "transformed_values_checked": 12,
+      "selected_values": [
+        {
+          "v": [
+            0,
+            0
+          ],
+          "ramanujan": 36
+        },
+        {
+          "v": [
+            1,
+            0
+          ],
+          "ramanujan": 1
+        },
+        {
+          "v": [
+            0,
+            1
+          ],
+          "ramanujan": 1
+        },
+        {
+          "v": [
+            1,
+            1
+          ],
+          "ramanujan": 1
+        },
+        {
+          "v": [
+            1,
+            2
+          ],
+          "ramanujan": 1
+        },
+        {
+          "v": [
+            2,
+            0
+          ],
+          "ramanujan": 1
+        },
+        {
+          "v": [
+            1,
+            2
+          ],
+          "ramanujan": 1
+        },
+        {
+          "v": [
+            7,
+            0
+          ],
+          "ramanujan": 36
+        },
+        {
+          "v": [
+            14,
+            0
+          ],
+          "ramanujan": 36
+        },
+        {
+          "v": [
+            8,
+            0
+          ],
+          "ramanujan": 1
+        },
+        {
+          "v": [
+            1,
+            3
+          ],
+          "ramanujan": -6
+        },
+        {
+          "v": [
+            -2,
+            -3
+          ],
+          "ramanujan": -6
+        }
+      ]
+    }
+  ],
+  "total_fourier_residues": 1824,
+  "total_metaplectic_values": 173,
+  "kernel_denominator_constant": 6912,
+  "budget_second_exponent": "91/120",
+  "endpoint_dual_scale_exponent": "-3/5",
+  "status": "Exact cyclotomic checks only. No analytic estimate, GRH statement, or prime asymptotic is numerically certified."
+}

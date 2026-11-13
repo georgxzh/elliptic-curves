@@ -1,5 +1,9 @@
 # Q4 continuation: a balanced quadratic-twist estimate
 
+**Next step:** [the completed Type I continuation](../2026-11-12-type-i/README.md)
+now proves the exact modulus-4 transformation and vanishing completed
+residue unconditionally. The uniform de-completed estimate remains open.
+
 Continuation of `c011f0c`, independently audited with Astra.
 
 **Strongest new proved analytic statement (under GRH).** With
