@@ -1,5 +1,11 @@
 # Elliptic-curve research
 
+[Uniform twisted Type I bounds](research/2026-11-13-uniform-type-i/README.md):
+an unconditional U^(1/2)R^(1/4) bound and a GRH U^(1/3)R^(1/3) bound
+after Mobius inversion, uniform in growing R=Nr. Exact dual Euler
+factors remove the previous level loss; the actual long block gains
+exponent 1/20. Independently audited by Astra. Q4 remains unassembled.
+
 [Completed Type I transformation and residue](research/2026-11-12-type-i/README.md):
 an unconditional modulus-4 transformation and zero-residue theorem for
 the correctly cube-completed quadratic-twisted sum, independently audited

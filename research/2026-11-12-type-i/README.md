@@ -1,5 +1,10 @@
 # Completed Type I: exact modulus-4 transform and zero residue
 
+**Continuation:** [uniform bounds after Mobius inversion](../2026-11-13-uniform-type-i/README.md)
+now replace the conservative level loss and prove a GRH saving for the
+actual long Type I block. The remaining prime-decomposition blocks and
+Q4 remain open in this work.
+
 Continuation of `8e72e3d`, 12 November 2026 (Toronto).
 
 **Proved unconditionally, using the published general theta transform:**
